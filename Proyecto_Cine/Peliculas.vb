@@ -1,15 +1,15 @@
 ﻿Public Class Peliculas
-    Dim titulo(2) As String
+    Dim titulo(2) As String 'Arreglos donde se almacenaran los datos de la pelicula
     Dim genero(2) As String
     Dim tanda(2) As String
     Dim tipo(2) As String
     Dim año(2) As String
     Dim duracion(2) As String
-    Dim sala(2) As Integer
+    Dim sala(2) As Char
     Dim cont As Integer
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
-
-        If (cont = 2) Then
+        'Evento por el cual si ingresan los datos 
+        If (cont = 2) Then 'Una vez ingresado los datos se deshabilita el boton 
             btnIngresar.Enabled = False
             btnConfirmar.Enabled = True
         End If
@@ -27,6 +27,7 @@
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
-        Inicio.Show()
+        Inicio.Show() 'Cuando se habilite el boton este evento cerrara el form actual 
+        Close()
     End Sub
 End Class

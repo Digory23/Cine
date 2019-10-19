@@ -25,7 +25,7 @@ Partial Class Inicio
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
         Me.lblTandas = New System.Windows.Forms.Label()
         Me.btnTandas = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnConsultar = New System.Windows.Forms.Button()
         Me.lblConsulta = New System.Windows.Forms.Label()
         Me.btnRevisar = New System.Windows.Forms.Button()
         Me.lblAsientos = New System.Windows.Forms.Label()
@@ -52,14 +52,14 @@ Partial Class Inicio
         Me.btnTandas.Text = "Actualizar"
         Me.btnTandas.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnConsultar
         '
-        Me.Button1.Location = New System.Drawing.Point(268, 276)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 41)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Consultar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConsultar.Location = New System.Drawing.Point(268, 276)
+        Me.btnConsultar.Name = "btnConsultar"
+        Me.btnConsultar.Size = New System.Drawing.Size(75, 41)
+        Me.btnConsultar.TabIndex = 3
+        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.UseVisualStyleBackColor = True
         '
         'lblConsulta
         '
@@ -125,7 +125,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnRevisar)
         Me.Controls.Add(Me.lblAsientos)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConsultar)
         Me.Controls.Add(Me.lblConsulta)
         Me.Controls.Add(Me.btnTandas)
         Me.Controls.Add(Me.lblTandas)
@@ -138,7 +138,7 @@ Partial Class Inicio
 
     Friend WithEvents lblTandas As Label
     Friend WithEvents btnTandas As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnConsultar As Button
     Friend WithEvents lblConsulta As Label
     Friend WithEvents btnRevisar As Button
     Friend WithEvents lblAsientos As Label
