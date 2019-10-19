@@ -34,4 +34,9 @@
     Private Sub Peliculas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        Me.Hide()
+        Inicio.Show()
+    End Sub
 End Class

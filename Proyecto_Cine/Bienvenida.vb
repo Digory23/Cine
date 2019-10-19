@@ -5,4 +5,5 @@ Public Class frmBienvendia 'Este es el formulario de presentacion
         Inicio.Show()
         Hide()
     End Sub
+
 End Class

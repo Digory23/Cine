@@ -33,8 +33,8 @@ Partial Class Cliente
         Me.lblEdad = New System.Windows.Forms.Label()
         Me.txtAsientos = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.chbNiño = New System.Windows.Forms.CheckBox()
         Me.chbAdulto = New System.Windows.Forms.CheckBox()
+        Me.chbNiño = New System.Windows.Forms.CheckBox()
         Me.lblCortesia = New System.Windows.Forms.Label()
         Me.ckbCortesia = New System.Windows.Forms.CheckBox()
         Me.btnFacturar = New System.Windows.Forms.Button()
@@ -141,16 +141,6 @@ Partial Class Cliente
         Me.Panel1.Size = New System.Drawing.Size(100, 67)
         Me.Panel1.TabIndex = 11
         '
-        'chbNiño
-        '
-        Me.chbNiño.AutoSize = True
-        Me.chbNiño.Location = New System.Drawing.Point(4, 14)
-        Me.chbNiño.Name = "chbNiño"
-        Me.chbNiño.Size = New System.Drawing.Size(48, 17)
-        Me.chbNiño.TabIndex = 0
-        Me.chbNiño.Text = "Niño"
-        Me.chbNiño.UseVisualStyleBackColor = True
-        '
         'chbAdulto
         '
         Me.chbAdulto.AutoSize = True
@@ -160,6 +150,16 @@ Partial Class Cliente
         Me.chbAdulto.TabIndex = 1
         Me.chbAdulto.Text = "Adulto"
         Me.chbAdulto.UseVisualStyleBackColor = True
+        '
+        'chbNiño
+        '
+        Me.chbNiño.AutoSize = True
+        Me.chbNiño.Location = New System.Drawing.Point(4, 14)
+        Me.chbNiño.Name = "chbNiño"
+        Me.chbNiño.Size = New System.Drawing.Size(48, 17)
+        Me.chbNiño.TabIndex = 0
+        Me.chbNiño.Text = "Niño"
+        Me.chbNiño.UseVisualStyleBackColor = True
         '
         'lblCortesia
         '
@@ -254,7 +254,7 @@ Partial Class Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(330, 583)
+        Me.ClientSize = New System.Drawing.Size(368, 583)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnFacturar)
         Me.Controls.Add(Me.ckbCortesia)

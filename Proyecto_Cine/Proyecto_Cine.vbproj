@@ -160,5 +160,20 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\moviebg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\movieframe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\movieframered.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\moviemarquee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\movieseats.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

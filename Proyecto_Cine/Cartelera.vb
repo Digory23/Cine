@@ -6,4 +6,5 @@
     Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
         Cliente.Show()
     End Sub
+
 End Class
