@@ -20,14 +20,14 @@
         duracion = txtDuracion.Text
         sala = cmbSala.Text
 
-        peli.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont)
+        Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont)
         cont = cont + 1
 
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
-
-        Hide() 'Cuando se habilite el boton este evento cerrara el form actual 
+        Inicio.Show()
+        Close() 'Cuando se habilite el boton este evento cerrara el form actual 
 
     End Sub
 
