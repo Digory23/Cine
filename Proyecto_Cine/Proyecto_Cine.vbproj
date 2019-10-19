@@ -118,6 +118,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pelicula.vb" />
     <Compile Include="Peliculas.Designer.vb">
       <DependentUpon>Peliculas.vb</DependentUpon>
     </Compile>
