@@ -22,12 +22,9 @@ Partial Class Cliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblDatos = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtNomCliente = New System.Windows.Forms.TextBox()
         Me.dudBoletos = New System.Windows.Forms.DomainUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblEdad = New System.Windows.Forms.Label()
@@ -45,63 +42,40 @@ Partial Class Cliente
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'lblDatos
-        '
-        Me.lblDatos.AutoSize = True
-        Me.lblDatos.Location = New System.Drawing.Point(12, 23)
-        Me.lblDatos.Name = "lblDatos"
-        Me.lblDatos.Size = New System.Drawing.Size(87, 13)
-        Me.lblDatos.TabIndex = 0
-        Me.lblDatos.Text = "Datos del Cliente"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(52, 86)
+        Me.Label1.Location = New System.Drawing.Point(33, 43)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre:"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(52, 135)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Apellido"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(52, 184)
+        Me.Label3.Location = New System.Drawing.Point(22, 148)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Número de Boletos"
         '
-        'txtNombre
+        'txtNomCliente
         '
-        Me.txtNombre.Location = New System.Drawing.Point(179, 79)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(100, 20)
-        Me.txtNombre.TabIndex = 4
-        '
-        'txtApellido
-        '
-        Me.txtApellido.Location = New System.Drawing.Point(179, 128)
-        Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
-        Me.txtApellido.TabIndex = 5
+        Me.txtNomCliente.Location = New System.Drawing.Point(86, 40)
+        Me.txtNomCliente.Name = "txtNomCliente"
+        Me.txtNomCliente.Size = New System.Drawing.Size(163, 20)
+        Me.txtNomCliente.TabIndex = 4
         '
         'dudBoletos
         '
-        Me.dudBoletos.Location = New System.Drawing.Point(179, 182)
+        Me.dudBoletos.Location = New System.Drawing.Point(149, 146)
         Me.dudBoletos.Name = "dudBoletos"
         Me.dudBoletos.Size = New System.Drawing.Size(120, 20)
         Me.dudBoletos.TabIndex = 6
@@ -110,7 +84,7 @@ Partial Class Cliente
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(52, 231)
+        Me.Label4.Location = New System.Drawing.Point(22, 195)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 7
@@ -119,7 +93,7 @@ Partial Class Cliente
         'lblEdad
         '
         Me.lblEdad.AutoSize = True
-        Me.lblEdad.Location = New System.Drawing.Point(52, 298)
+        Me.lblEdad.Location = New System.Drawing.Point(22, 262)
         Me.lblEdad.Name = "lblEdad"
         Me.lblEdad.Size = New System.Drawing.Size(32, 13)
         Me.lblEdad.TabIndex = 9
@@ -127,7 +101,7 @@ Partial Class Cliente
         '
         'txtAsientos
         '
-        Me.txtAsientos.Location = New System.Drawing.Point(179, 228)
+        Me.txtAsientos.Location = New System.Drawing.Point(149, 192)
         Me.txtAsientos.Name = "txtAsientos"
         Me.txtAsientos.Size = New System.Drawing.Size(100, 20)
         Me.txtAsientos.TabIndex = 10
@@ -136,7 +110,7 @@ Partial Class Cliente
         '
         Me.Panel1.Controls.Add(Me.chbAdulto)
         Me.Panel1.Controls.Add(Me.chbNiño)
-        Me.Panel1.Location = New System.Drawing.Point(179, 280)
+        Me.Panel1.Location = New System.Drawing.Point(149, 244)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(100, 67)
         Me.Panel1.TabIndex = 11
@@ -164,7 +138,7 @@ Partial Class Cliente
         'lblCortesia
         '
         Me.lblCortesia.AutoSize = True
-        Me.lblCortesia.Location = New System.Drawing.Point(52, 383)
+        Me.lblCortesia.Location = New System.Drawing.Point(22, 347)
         Me.lblCortesia.Name = "lblCortesia"
         Me.lblCortesia.Size = New System.Drawing.Size(47, 13)
         Me.lblCortesia.TabIndex = 14
@@ -173,7 +147,7 @@ Partial Class Cliente
         'ckbCortesia
         '
         Me.ckbCortesia.AutoSize = True
-        Me.ckbCortesia.Location = New System.Drawing.Point(178, 382)
+        Me.ckbCortesia.Location = New System.Drawing.Point(148, 346)
         Me.ckbCortesia.Name = "ckbCortesia"
         Me.ckbCortesia.Size = New System.Drawing.Size(66, 17)
         Me.ckbCortesia.TabIndex = 15
@@ -250,43 +224,47 @@ Partial Class Cliente
         Me.Panel2.Size = New System.Drawing.Size(268, 116)
         Me.Panel2.TabIndex = 23
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ckbCortesia)
+        Me.GroupBox1.Controls.Add(Me.lblCortesia)
+        Me.GroupBox1.Controls.Add(Me.Panel1)
+        Me.GroupBox1.Controls.Add(Me.txtAsientos)
+        Me.GroupBox1.Controls.Add(Me.lblEdad)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.dudBoletos)
+        Me.GroupBox1.Controls.Add(Me.txtNomCliente)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 379)
+        Me.GroupBox1.TabIndex = 24
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos del Cliente"
+        '
         'Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 583)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnFacturar)
-        Me.Controls.Add(Me.ckbCortesia)
-        Me.Controls.Add(Me.lblCortesia)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.txtAsientos)
-        Me.Controls.Add(Me.lblEdad)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.dudBoletos)
-        Me.Controls.Add(Me.txtApellido)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lblDatos)
         Me.Name = "Cliente"
         Me.Text = "Cliente"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblDatos As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtNombre As TextBox
-    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtNomCliente As TextBox
     Friend WithEvents dudBoletos As DomainUpDown
     Friend WithEvents Label4 As Label
     Friend WithEvents lblEdad As Label
@@ -304,4 +282,5 @@ Partial Class Cliente
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
