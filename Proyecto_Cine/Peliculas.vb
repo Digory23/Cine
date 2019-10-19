@@ -9,6 +9,9 @@
     Dim cont As Integer
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         'Evento por el cual si ingresan los datos 
+
+        'Dim titulo, genero, tanda, tipo, año, duracion As String
+        'Dim sala As Char
         If (cont = 2) Then 'Una vez ingresado los datos se deshabilita el boton 
             btnIngresar.Enabled = False
             btnConfirmar.Enabled = True
@@ -21,12 +24,14 @@
         tipo(cont) = cmbTipo.Text
         duracion(cont) = txtDuracion.Text
         sala(cont) = cmbSala.Text
+        Dim peli As Peliculas
 
         cont = cont + 1
 
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
+
         Inicio.Show() 'Cuando se habilite el boton este evento cerrara el form actual 
         Close()
     End Sub
