@@ -30,4 +30,9 @@
         Inicio.Show() 'Cuando se habilite el boton este evento cerrara el form actual 
         Close()
     End Sub
+
+    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        Me.Hide()
+        Inicio.Show()
+    End Sub
 End Class
