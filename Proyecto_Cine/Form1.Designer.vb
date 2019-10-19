@@ -40,11 +40,12 @@ Partial Class frmBienvendia
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(313, 329)
+        Me.Label2.Location = New System.Drawing.Point(222, 329)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(344, 13)
+        Me.Label2.Size = New System.Drawing.Size(435, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Creado por: Diana García, Daniel Díaz, Virgilio Valentin, Jahir Calderon."
+        Me.Label2.Text = "Creado por: Diana García, Daniel Díaz, Virgilio Valentin, Jahir Calderon, Nathali" &
+    "e Acevedo."
         '
         'btnContinuar
         '
