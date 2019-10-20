@@ -88,6 +88,7 @@ Partial Class Peliculas
         'txtTitulo
         '
         Me.txtTitulo.Location = New System.Drawing.Point(119, 15)
+        Me.txtTitulo.MaxLength = 30
         Me.txtTitulo.Name = "txtTitulo"
         Me.txtTitulo.Size = New System.Drawing.Size(100, 20)
         Me.txtTitulo.TabIndex = 4

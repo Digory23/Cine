@@ -15,6 +15,7 @@ Public Class Peliculas
             btnConfirmar.Enabled = True
         End If
 
+
         titulo = txtTitulo.Text
         año = txtAño.Text
         genero = cmbGenero.Text
@@ -22,6 +23,7 @@ Public Class Peliculas
         tipo = cmbTipo.Text
         duracion = txtDuracion.Text
         sala = cmbSala.Text
+        Call validar()
 
         Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
         cont = cont + 1
@@ -65,6 +67,15 @@ Public Class Peliculas
         cmbTipo.Text = ""
     End Function
 
+    Public Function validar()
+        If txtTitulo.Text = "" Or txtAño.Text = "" Or txtDuracion.Text = "" Or txtTitulo.Text = "" Or cmbGenero.Text = "" Or cmbSala.Text = "" Or cmbTanda.Text = "" Or cmbTipo.Text = "" Then
+            MsgBox("Error Ingresar Datos", MsgBoxStyle.Critical)
+        End If
+    End Function
+
+
+
+
     'Validaciónes de todos los campos
     Private Sub txtTitulo_Validating(sender As Object, e As CancelEventArgs) Handles txtTitulo.Validating
         If txtTitulo.Text = "" Then
@@ -74,10 +85,12 @@ Public Class Peliculas
     End Sub
 
     Private Sub txtAño_Validating(sender As Object, e As CancelEventArgs) Handles txtAño.Validating
-        If txtAño.Text > 1990 Or txtAño.Text < 2019 Then
-            MsgBox("Año Invalido", MsgBoxStyle.Critical)
+        If txtAño.Text <= 1990 And txtAño.Text >= 2019 Then
+            MsgBox("Error", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
+
+
     End Sub
 
     Private Sub cmbGenero_Validating(sender As Object, e As CancelEventArgs) Handles cmbGenero.Validating
@@ -102,8 +115,8 @@ Public Class Peliculas
     End Sub
 
     Private Sub txtDuracion_Validating(sender As Object, e As CancelEventArgs) Handles txtDuracion.Validating
-        If txtDuracion.Text > 0 Or txtDuracion.Text < 200 Then
-            MsgBox("Año Invalido", MsgBoxStyle.Critical)
+        If txtDuracion.Text <= 0 And txtDuracion.Text >= 500 Then
+            MsgBox("Error", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
     End Sub
