@@ -44,13 +44,13 @@ Partial Class Cliente
         Me.rdbEstreno = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.rdbRegular = New System.Windows.Forms.RadioButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtSala = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -251,7 +251,7 @@ Partial Class Cliente
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.ComboBox1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.txtSala)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label6)
         Me.SplitContainer1.Size = New System.Drawing.Size(216, 101)
         Me.SplitContainer1.SplitterDistance = 107
@@ -287,15 +287,6 @@ Partial Class Cliente
         Me.rdbRegular.TabStop = True
         Me.rdbRegular.Text = "Regular"
         Me.rdbRegular.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 44)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(79, 23)
-        Me.ComboBox1.TabIndex = 2
         '
         'Label6
         '
@@ -352,6 +343,14 @@ Partial Class Cliente
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Compra del boleto"
         '
+        'txtSala
+        '
+        Me.txtSala.Location = New System.Drawing.Point(16, 44)
+        Me.txtSala.Name = "txtSala"
+        Me.txtSala.ReadOnly = True
+        Me.txtSala.Size = New System.Drawing.Size(75, 23)
+        Me.txtSala.TabIndex = 32
+        '
         'Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -404,11 +403,11 @@ Partial Class Cliente
     Friend WithEvents rdbEstreno As RadioButton
     Friend WithEvents Label4 As Label
     Friend WithEvents rdbRegular As RadioButton
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label2 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents txtSala As TextBox
 End Class
