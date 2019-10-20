@@ -105,6 +105,7 @@ Public Class Peliculas
             MsgBox("Error", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
+
     End Sub
 
     Private Sub cmbGenero_Validating(sender As Object, e As CancelEventArgs) Handles cmbGenero.Validating
@@ -146,6 +147,20 @@ Public Class Peliculas
         If file.Filter = "" Then
             MsgBox("Seleccione una Imagen", MsgBoxStyle.Critical)
             e.Cancel = True
+        End If
+    End Sub
+
+    Private Sub txtAño_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAño.KeyPress
+        If Not IsNumeric(e.KeyChar) Then
+            MsgBox("Solo se permiten números", MsgBoxStyle.Critical)
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtDuracion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDuracion.KeyPress
+        If Not IsNumeric(e.KeyChar) Then
+            MsgBox("Solo se permiten números", MsgBoxStyle.Critical)
+            e.Handled = True
         End If
     End Sub
 End Class
