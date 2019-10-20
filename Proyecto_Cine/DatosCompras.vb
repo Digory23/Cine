@@ -1,6 +1,5 @@
 ﻿Module DatosCompras
-    Private nom, fec As String
-    Private asi() As String
+    Private nom, fec, asi, pelic As String
     Private ni, ad, i As Integer
     Private cort As Boolean
     'Sets de los Datos de Compra
@@ -16,14 +15,14 @@
     Public Sub SetAdultos(a As Integer)
         ad = a
     End Sub
-    Public Sub SetAsientos(dato As String, t As Integer)
-        Dim c As Integer
-        For c = 0 To t
-            asi(t) = dato
-        Next
+    Public Sub SetAsientos(asientos As String)
+        asi = asientos
     End Sub
     Public Sub SetCortesia(b As Boolean)
         cort = b
+    End Sub
+    Public Sub SetTipoPelicula(b As String)
+        pelic = b
     End Sub
     Public Sub SetIndice(ind As Integer)
         i = ind
@@ -47,6 +46,9 @@
     End Function
     Public Function GetCortesia()
         Return cort
+    End Function
+    Public Function GetTipoPelicula()
+        Return pelic
     End Function
     Public Function GetIndice()
         Return i
