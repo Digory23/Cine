@@ -151,6 +151,7 @@ Partial Class Peliculas
         '
         'btnIngresar
         '
+        Me.btnIngresar.Enabled = False
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.ForeColor = System.Drawing.Color.DarkRed
         Me.btnIngresar.Location = New System.Drawing.Point(43, 384)
