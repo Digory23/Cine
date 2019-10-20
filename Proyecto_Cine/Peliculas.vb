@@ -5,9 +5,12 @@ Public Class Peliculas
     Dim ruta As Image
     Dim cont As Integer
     Dim peli As New Inicio
+    Dim file As New OpenFileDialog()
+
+
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         'Evento por el cual si ingresan los datos 
-
+        Dim opc As Boolean = True
         Dim titulo, genero, tanda, tipo, año, duracion As String
         Dim sala As Char
         If (cont = 2) Then 'Una vez ingresado los datos se deshabilita el boton 
@@ -15,6 +18,7 @@ Public Class Peliculas
             btnConfirmar.Enabled = True
         End If
 
+        btnIngresar.Enabled = False
 
         titulo = txtTitulo.Text
         año = txtAño.Text
@@ -23,7 +27,9 @@ Public Class Peliculas
         tipo = cmbTipo.Text
         duracion = txtDuracion.Text
         sala = cmbSala.Text
+
         Call validar()
+
 
         Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
         cont = cont + 1
@@ -48,11 +54,11 @@ Public Class Peliculas
     End Sub
 
     Private Sub btnCargar_Click(sender As Object, e As EventArgs) Handles btnCargar.Click
-        Dim file As New OpenFileDialog()
         file.Filter = "Archivo JPG|*.jpg"
         If file.ShowDialog() = DialogResult.OK Then
             ruta = Image.FromFile(file.FileName)
         End If
+        btnIngresar.Enabled = True
     End Sub
 
     'Función para limpiar todos los campos 
@@ -67,10 +73,20 @@ Public Class Peliculas
         cmbTipo.Text = ""
     End Function
 
+    'Funcion para validar campos 
     Public Function validar()
         If txtTitulo.Text = "" Or txtAño.Text = "" Or txtDuracion.Text = "" Or txtTitulo.Text = "" Or cmbGenero.Text = "" Or cmbSala.Text = "" Or cmbTanda.Text = "" Or cmbTipo.Text = "" Then
             MsgBox("Error Ingresar Datos", MsgBoxStyle.Critical)
+            cont = cont - 1
+
+        ElseIf file.Filter = "" Then
+            MsgBox("Seleccione una Imagen", MsgBoxStyle.Critical)
+            cont = cont - 1
+
         End If
+
+
+
     End Function
 
 
@@ -89,8 +105,6 @@ Public Class Peliculas
             MsgBox("Error", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
-
-
     End Sub
 
     Private Sub cmbGenero_Validating(sender As Object, e As CancelEventArgs) Handles cmbGenero.Validating
@@ -108,14 +122,14 @@ Public Class Peliculas
     End Sub
 
     Private Sub cmbTipo_Validating(sender As Object, e As CancelEventArgs) Handles cmbTipo.Validating
-        If cmbTipo.Text = " " Then
+        If cmbTipo.Text = "" Then
             MsgBox("Seleccione un tipo", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
     End Sub
 
     Private Sub txtDuracion_Validating(sender As Object, e As CancelEventArgs) Handles txtDuracion.Validating
-        If txtDuracion.Text <= 0 And txtDuracion.Text >= 500 Then
+        If txtDuracion.Text <= 0 Or txtDuracion.Text >= 500 Then
             MsgBox("Error", MsgBoxStyle.Critical)
             e.Cancel = True
         End If
@@ -129,6 +143,9 @@ Public Class Peliculas
     End Sub
 
     Private Sub btnCargar_Validating(sender As Object, e As CancelEventArgs) Handles btnCargar.Validating
-
+        If file.Filter = "" Then
+            MsgBox("Seleccione una Imagen", MsgBoxStyle.Critical)
+            e.Cancel = True
+        End If
     End Sub
 End Class
