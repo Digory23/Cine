@@ -30,13 +30,17 @@ Partial Class Inicio
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnTandas
         '
         Me.btnTandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTandas.ForeColor = System.Drawing.Color.Maroon
-        Me.btnTandas.Location = New System.Drawing.Point(339, 56)
+        Me.btnTandas.Location = New System.Drawing.Point(328, 56)
         Me.btnTandas.Name = "btnTandas"
         Me.btnTandas.Size = New System.Drawing.Size(166, 29)
         Me.btnTandas.TabIndex = 1
@@ -47,7 +51,7 @@ Partial Class Inicio
         '
         Me.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConsultar.ForeColor = System.Drawing.Color.DarkGoldenrod
-        Me.btnConsultar.Location = New System.Drawing.Point(339, 122)
+        Me.btnConsultar.Location = New System.Drawing.Point(328, 108)
         Me.btnConsultar.Name = "btnConsultar"
         Me.btnConsultar.Size = New System.Drawing.Size(166, 27)
         Me.btnConsultar.TabIndex = 3
@@ -57,7 +61,7 @@ Partial Class Inicio
         'btnRevisar
         '
         Me.btnRevisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRevisar.Location = New System.Drawing.Point(339, 188)
+        Me.btnRevisar.Location = New System.Drawing.Point(328, 155)
         Me.btnRevisar.Name = "btnRevisar"
         Me.btnRevisar.Size = New System.Drawing.Size(166, 25)
         Me.btnRevisar.TabIndex = 5
@@ -68,9 +72,9 @@ Partial Class Inicio
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(249, 42)
+        Me.Panel1.Location = New System.Drawing.Point(249, 56)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(57, 60)
+        Me.Panel1.Size = New System.Drawing.Size(39, 43)
         Me.Panel1.TabIndex = 6
         '
         'Panel2
@@ -79,16 +83,16 @@ Partial Class Inicio
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.Location = New System.Drawing.Point(249, 108)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(57, 58)
+        Me.Panel2.Size = New System.Drawing.Size(39, 41)
         Me.Panel2.TabIndex = 7
         '
         'Panel3
         '
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel3.Location = New System.Drawing.Point(249, 172)
+        Me.Panel3.Location = New System.Drawing.Point(249, 155)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(57, 55)
+        Me.Panel3.Size = New System.Drawing.Size(39, 41)
         Me.Panel3.TabIndex = 8
         '
         'Label1
@@ -102,13 +106,49 @@ Partial Class Inicio
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Selecciona una opción"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(249, 202)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 38)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.Button1.Location = New System.Drawing.Point(328, 202)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(165, 26)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Ver totales"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(328, 266)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(107, 43)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Salir"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.moviebg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(733, 385)
+        Me.ClientSize = New System.Drawing.Size(733, 411)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -118,6 +158,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.btnTandas)
         Me.Name = "Inicio"
         Me.Text = "Inicio"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,4 +170,7 @@ Partial Class Inicio
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
