@@ -178,5 +178,8 @@
   <ItemGroup>
     <None Include="img\movieseats.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\barcode.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
