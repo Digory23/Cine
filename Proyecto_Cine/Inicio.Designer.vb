@@ -23,126 +23,110 @@ Partial Class Inicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
-        Me.lblTandas = New System.Windows.Forms.Label()
         Me.btnTandas = New System.Windows.Forms.Button()
         Me.btnConsultar = New System.Windows.Forms.Button()
-        Me.lblConsulta = New System.Windows.Forms.Label()
         Me.btnRevisar = New System.Windows.Forms.Button()
-        Me.lblAsientos = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'lblTandas
-        '
-        Me.lblTandas.AutoSize = True
-        Me.lblTandas.Location = New System.Drawing.Point(23, 250)
-        Me.lblTandas.Name = "lblTandas"
-        Me.lblTandas.Size = New System.Drawing.Size(142, 13)
-        Me.lblTandas.TabIndex = 0
-        Me.lblTandas.Text = "Actualizar Tandas y Horarios"
         '
         'btnTandas
         '
-        Me.btnTandas.Location = New System.Drawing.Point(54, 276)
+        Me.btnTandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTandas.ForeColor = System.Drawing.Color.Maroon
+        Me.btnTandas.Location = New System.Drawing.Point(339, 56)
         Me.btnTandas.Name = "btnTandas"
-        Me.btnTandas.Size = New System.Drawing.Size(75, 41)
+        Me.btnTandas.Size = New System.Drawing.Size(166, 29)
         Me.btnTandas.TabIndex = 1
-        Me.btnTandas.Text = "Actualizar"
+        Me.btnTandas.Text = "Actualizar Tandas y Horarios"
         Me.btnTandas.UseVisualStyleBackColor = True
         '
         'btnConsultar
         '
-        Me.btnConsultar.Location = New System.Drawing.Point(268, 276)
+        Me.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsultar.ForeColor = System.Drawing.Color.DarkGoldenrod
+        Me.btnConsultar.Location = New System.Drawing.Point(339, 122)
         Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Size = New System.Drawing.Size(75, 41)
+        Me.btnConsultar.Size = New System.Drawing.Size(166, 27)
         Me.btnConsultar.TabIndex = 3
-        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.Text = "Consultar Tandas y Horarios"
         Me.btnConsultar.UseVisualStyleBackColor = True
-        '
-        'lblConsulta
-        '
-        Me.lblConsulta.AutoSize = True
-        Me.lblConsulta.Location = New System.Drawing.Point(246, 250)
-        Me.lblConsulta.Name = "lblConsulta"
-        Me.lblConsulta.Size = New System.Drawing.Size(140, 13)
-        Me.lblConsulta.TabIndex = 2
-        Me.lblConsulta.Text = "Consultar Tandas y Horarios"
         '
         'btnRevisar
         '
-        Me.btnRevisar.Location = New System.Drawing.Point(484, 276)
+        Me.btnRevisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRevisar.Location = New System.Drawing.Point(339, 188)
         Me.btnRevisar.Name = "btnRevisar"
-        Me.btnRevisar.Size = New System.Drawing.Size(75, 41)
+        Me.btnRevisar.Size = New System.Drawing.Size(166, 25)
         Me.btnRevisar.TabIndex = 5
-        Me.btnRevisar.Text = "Asientos Disponibles"
+        Me.btnRevisar.Text = "Consultar Asientos Disponibles"
         Me.btnRevisar.UseVisualStyleBackColor = True
-        '
-        'lblAsientos
-        '
-        Me.lblAsientos.AutoSize = True
-        Me.lblAsientos.Location = New System.Drawing.Point(449, 250)
-        Me.lblAsientos.Name = "lblAsientos"
-        Me.lblAsientos.Size = New System.Drawing.Size(151, 13)
-        Me.lblAsientos.TabIndex = 4
-        Me.lblAsientos.Text = "Consultar Asientos Disponibles"
         '
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(12, 38)
+        Me.Panel1.Location = New System.Drawing.Point(249, 42)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(167, 199)
+        Me.Panel1.Size = New System.Drawing.Size(57, 60)
         Me.Panel1.TabIndex = 6
         '
         'Panel2
         '
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.Location = New System.Drawing.Point(227, 38)
+        Me.Panel2.Location = New System.Drawing.Point(249, 108)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(168, 199)
+        Me.Panel2.Size = New System.Drawing.Size(57, 58)
         Me.Panel2.TabIndex = 7
         '
         'Panel3
         '
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel3.Location = New System.Drawing.Point(433, 38)
+        Me.Panel3.Location = New System.Drawing.Point(249, 172)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(177, 199)
+        Me.Panel3.Size = New System.Drawing.Size(57, 55)
         Me.Panel3.TabIndex = 8
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(312, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(142, 17)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Selecciona una opción"
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 350)
+        Me.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.moviebg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(733, 385)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnRevisar)
-        Me.Controls.Add(Me.lblAsientos)
         Me.Controls.Add(Me.btnConsultar)
-        Me.Controls.Add(Me.lblConsulta)
         Me.Controls.Add(Me.btnTandas)
-        Me.Controls.Add(Me.lblTandas)
         Me.Name = "Inicio"
         Me.Text = "Inicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblTandas As Label
     Friend WithEvents btnTandas As Button
     Friend WithEvents btnConsultar As Button
-    Friend WithEvents lblConsulta As Label
     Friend WithEvents btnRevisar As Button
-    Friend WithEvents lblAsientos As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label1 As Label
 End Class

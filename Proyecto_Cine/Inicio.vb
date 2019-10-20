@@ -1,12 +1,8 @@
 ﻿Public Class Inicio 'En este formulario se muestra el menu principal
 
-    Dim titulo(2) As String 'Arreglos donde se almacenaran los datos de la pelicula
-    Dim genero(2) As String
-    Dim tanda(2) As String
-    Dim tipo(2) As String
-    Dim año(2) As String
-    Dim duracion(2) As String
-    Dim sala(2) As Char
+
+
+
     Private Sub btnTandas_Click(sender As Object, e As EventArgs) Handles btnTandas.Click
         Peliculas.Show()
         Hide()
@@ -17,4 +13,10 @@
         Cartelera.Show()
         Hide()
     End Sub
+
+    Private Sub BtnRevisar_Click(sender As Object, e As EventArgs) Handles btnRevisar.Click
+
+    End Sub
+
+
 End Class
