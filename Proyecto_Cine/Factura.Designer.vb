@@ -25,7 +25,7 @@ Partial Class Factura
         Me.gbxDetalle = New System.Windows.Forms.GroupBox()
         Me.txtSala = New System.Windows.Forms.TextBox()
         Me.txtAdultos = New System.Windows.Forms.TextBox()
-        Me.txtNiños = New System.Windows.Forms.TextBox()
+        Me.txtNinos = New System.Windows.Forms.TextBox()
         Me.txtNomPeli = New System.Windows.Forms.TextBox()
         Me.txtNomCliente = New System.Windows.Forms.TextBox()
         Me.txtAsientos = New System.Windows.Forms.TextBox()
@@ -33,30 +33,30 @@ Partial Class Factura
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtDescPeli = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblMensCortesia = New System.Windows.Forms.Label()
+        Me.txtMDevuelto = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtMPagado = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtMPagar = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.txtDescuento = New System.Windows.Forms.Panel()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.fechaHoy = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.txtTotal = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.fechaPeli = New System.Windows.Forms.TextBox()
         Me.gbxDetalle.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.txtDescuento.SuspendLayout()
@@ -66,9 +66,10 @@ Partial Class Factura
         'gbxDetalle
         '
         Me.gbxDetalle.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.gbxDetalle.Controls.Add(Me.fechaPeli)
         Me.gbxDetalle.Controls.Add(Me.txtSala)
         Me.gbxDetalle.Controls.Add(Me.txtAdultos)
-        Me.gbxDetalle.Controls.Add(Me.txtNiños)
+        Me.gbxDetalle.Controls.Add(Me.txtNinos)
         Me.gbxDetalle.Controls.Add(Me.txtNomPeli)
         Me.gbxDetalle.Controls.Add(Me.txtNomCliente)
         Me.gbxDetalle.Controls.Add(Me.txtAsientos)
@@ -76,7 +77,6 @@ Partial Class Factura
         Me.gbxDetalle.Controls.Add(Me.Label7)
         Me.gbxDetalle.Controls.Add(Me.Label6)
         Me.gbxDetalle.Controls.Add(Me.Label4)
-        Me.gbxDetalle.Controls.Add(Me.DateTimePicker1)
         Me.gbxDetalle.Controls.Add(Me.Label3)
         Me.gbxDetalle.Controls.Add(Me.Label2)
         Me.gbxDetalle.Controls.Add(Me.Label1)
@@ -104,13 +104,13 @@ Partial Class Factura
         Me.txtAdultos.Size = New System.Drawing.Size(38, 23)
         Me.txtAdultos.TabIndex = 19
         '
-        'txtNiños
+        'txtNinos
         '
-        Me.txtNiños.Location = New System.Drawing.Point(300, 130)
-        Me.txtNiños.Name = "txtNiños"
-        Me.txtNiños.ReadOnly = True
-        Me.txtNiños.Size = New System.Drawing.Size(38, 23)
-        Me.txtNiños.TabIndex = 18
+        Me.txtNinos.Location = New System.Drawing.Point(300, 130)
+        Me.txtNinos.Name = "txtNinos"
+        Me.txtNinos.ReadOnly = True
+        Me.txtNinos.Size = New System.Drawing.Size(38, 23)
+        Me.txtNinos.TabIndex = 18
         '
         'txtNomPeli
         '
@@ -122,6 +122,7 @@ Partial Class Factura
         '
         'txtNomCliente
         '
+        Me.txtNomCliente.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtNomCliente.Location = New System.Drawing.Point(149, 37)
         Me.txtNomCliente.Name = "txtNomCliente"
         Me.txtNomCliente.ReadOnly = True
@@ -172,13 +173,6 @@ Partial Class Factura
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "No. Sala: "
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(149, 99)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(189, 23)
-        Me.DateTimePicker1.TabIndex = 5
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -210,14 +204,14 @@ Partial Class Factura
         '
         Me.GroupBox1.Controls.Add(Me.txtTotal)
         Me.GroupBox1.Controls.Add(Me.Label18)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txtDescPeli)
         Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.lblMensCortesia)
+        Me.GroupBox1.Controls.Add(Me.txtMDevuelto)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.txtMPagado)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtMPagar)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Location = New System.Drawing.Point(419, 134)
         Me.GroupBox1.Name = "GroupBox1"
@@ -226,23 +220,58 @@ Partial Class Factura
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Total a Pagar"
         '
-        'Label15
+        'txtTotal
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label15.Location = New System.Drawing.Point(76, 198)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(176, 13)
-        Me.Label15.TabIndex = 26
-        Me.Label15.Text = "Mensaje si tiene pase de cortesia"
+        Me.txtTotal.Location = New System.Drawing.Point(212, 28)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.ReadOnly = True
+        Me.txtTotal.Size = New System.Drawing.Size(78, 22)
+        Me.txtTotal.TabIndex = 30
         '
-        'TextBox3
+        'Label18
         '
-        Me.TextBox3.Location = New System.Drawing.Point(212, 155)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(78, 22)
-        Me.TextBox3.TabIndex = 25
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(33, 35)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(34, 13)
+        Me.Label18.TabIndex = 29
+        Me.Label18.Text = "Total:"
+        '
+        'txtDescPeli
+        '
+        Me.txtDescPeli.Location = New System.Drawing.Point(212, 58)
+        Me.txtDescPeli.Name = "txtDescPeli"
+        Me.txtDescPeli.ReadOnly = True
+        Me.txtDescPeli.Size = New System.Drawing.Size(78, 22)
+        Me.txtDescPeli.TabIndex = 28
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(33, 63)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(65, 13)
+        Me.Label17.TabIndex = 27
+        Me.Label17.Text = "Descuento:"
+        '
+        'lblMensCortesia
+        '
+        Me.lblMensCortesia.AutoSize = True
+        Me.lblMensCortesia.ForeColor = System.Drawing.Color.DarkRed
+        Me.lblMensCortesia.Location = New System.Drawing.Point(76, 198)
+        Me.lblMensCortesia.Name = "lblMensCortesia"
+        Me.lblMensCortesia.Size = New System.Drawing.Size(176, 13)
+        Me.lblMensCortesia.TabIndex = 26
+        Me.lblMensCortesia.Text = "Mensaje si tiene pase de cortesia"
+        Me.lblMensCortesia.Visible = False
+        '
+        'txtMDevuelto
+        '
+        Me.txtMDevuelto.Location = New System.Drawing.Point(212, 155)
+        Me.txtMDevuelto.Name = "txtMDevuelto"
+        Me.txtMDevuelto.ReadOnly = True
+        Me.txtMDevuelto.Size = New System.Drawing.Size(78, 22)
+        Me.txtMDevuelto.TabIndex = 25
         '
         'Label10
         '
@@ -253,30 +282,30 @@ Partial Class Factura
         Me.Label10.TabIndex = 24
         Me.Label10.Text = "Monto Devuelto:"
         '
-        'TextBox2
+        'txtMPagado
         '
-        Me.TextBox2.Location = New System.Drawing.Point(212, 122)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(78, 22)
-        Me.TextBox2.TabIndex = 23
+        Me.txtMPagado.Location = New System.Drawing.Point(212, 122)
+        Me.txtMPagado.Name = "txtMPagado"
+        Me.txtMPagado.ReadOnly = True
+        Me.txtMPagado.Size = New System.Drawing.Size(78, 22)
+        Me.txtMPagado.TabIndex = 23
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(33, 125)
+        Me.Label9.Location = New System.Drawing.Point(33, 127)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 13)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "Monto Pagado:"
         '
-        'TextBox1
+        'txtMPagar
         '
-        Me.TextBox1.Location = New System.Drawing.Point(212, 91)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(78, 22)
-        Me.TextBox1.TabIndex = 21
+        Me.txtMPagar.Location = New System.Drawing.Point(212, 91)
+        Me.txtMPagar.Name = "txtMPagar"
+        Me.txtMPagar.ReadOnly = True
+        Me.txtMPagar.Size = New System.Drawing.Size(78, 22)
+        Me.txtMPagar.TabIndex = 21
         '
         'Label5
         '
@@ -302,7 +331,7 @@ Partial Class Factura
         '
         Me.txtDescuento.BackColor = System.Drawing.Color.White
         Me.txtDescuento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDescuento.Controls.Add(Me.Label16)
+        Me.txtDescuento.Controls.Add(Me.fechaHoy)
         Me.txtDescuento.Controls.Add(Me.Label14)
         Me.txtDescuento.Controls.Add(Me.PictureBox1)
         Me.txtDescuento.Controls.Add(Me.Label13)
@@ -317,15 +346,15 @@ Partial Class Factura
         Me.txtDescuento.Size = New System.Drawing.Size(759, 517)
         Me.txtDescuento.TabIndex = 3
         '
-        'Label16
+        'fechaHoy
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(341, 89)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(85, 17)
-        Me.Label16.TabIndex = 8
-        Me.Label16.Text = "Fecha de hoy"
+        Me.fechaHoy.AutoSize = True
+        Me.fechaHoy.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fechaHoy.Location = New System.Drawing.Point(341, 89)
+        Me.fechaHoy.Name = "fechaHoy"
+        Me.fechaHoy.Size = New System.Drawing.Size(85, 17)
+        Me.fechaHoy.TabIndex = 8
+        Me.fechaHoy.Text = "Fecha de hoy"
         '
         'Label14
         '
@@ -377,39 +406,13 @@ Partial Class Factura
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Cinexxxxx Panamá, S.A."
         '
-        'TextBox4
+        'fechaPeli
         '
-        Me.TextBox4.Location = New System.Drawing.Point(212, 58)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(78, 22)
-        Me.TextBox4.TabIndex = 28
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(33, 63)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(65, 13)
-        Me.Label17.TabIndex = 27
-        Me.Label17.Text = "Descuento:"
-        '
-        'txtTotal
-        '
-        Me.txtTotal.Location = New System.Drawing.Point(212, 28)
-        Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.ReadOnly = True
-        Me.txtTotal.Size = New System.Drawing.Size(78, 22)
-        Me.txtTotal.TabIndex = 30
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(33, 35)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(34, 13)
-        Me.Label18.TabIndex = 29
-        Me.Label18.Text = "Total:"
+        Me.fechaPeli.Location = New System.Drawing.Point(149, 99)
+        Me.fechaPeli.Name = "fechaPeli"
+        Me.fechaPeli.ReadOnly = True
+        Me.fechaPeli.Size = New System.Drawing.Size(189, 23)
+        Me.fechaPeli.TabIndex = 21
         '
         'Factura
         '
@@ -435,7 +438,7 @@ Partial Class Factura
     Friend WithEvents gbxDetalle As GroupBox
     Friend WithEvents txtSala As TextBox
     Friend WithEvents txtAdultos As TextBox
-    Friend WithEvents txtNiños As TextBox
+    Friend WithEvents txtNinos As TextBox
     Friend WithEvents txtNomPeli As TextBox
     Friend WithEvents txtNomCliente As TextBox
     Friend WithEvents txtAsientos As TextBox
@@ -443,16 +446,15 @@ Partial Class Factura
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtMDevuelto As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtMPagado As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtMPagar As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents btnRegresar As Button
     Friend WithEvents txtDescuento As Panel
@@ -461,10 +463,11 @@ Partial Class Factura
     Friend WithEvents Label11 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents lblMensCortesia As Label
+    Friend WithEvents fechaHoy As Label
+    Friend WithEvents txtDescPeli As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents txtTotal As TextBox
     Friend WithEvents Label18 As Label
+    Friend WithEvents fechaPeli As TextBox
 End Class

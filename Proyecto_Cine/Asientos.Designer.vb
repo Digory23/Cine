@@ -112,10 +112,10 @@ Partial Class Asientos
         Me.lblColumnas.AutoSize = True
         Me.lblColumnas.Location = New System.Drawing.Point(106, 214)
         Me.lblColumnas.Name = "lblColumnas"
-        Me.lblColumnas.Size = New System.Drawing.Size(289, 13)
+        Me.lblColumnas.Size = New System.Drawing.Size(292, 13)
         Me.lblColumnas.TabIndex = 17
-        Me.lblColumnas.Text = "1                         2                  3                       4           " &
-    "       5"
+        Me.lblColumnas.Text = " 1                         2                  3                       4          " &
+    "        5"
         '
         'ptbC4
         '
@@ -199,6 +199,7 @@ Partial Class Asientos
         '
         'ptbB2
         '
+        Me.ptbB2.BackColor = System.Drawing.SystemColors.Control
         Me.ptbB2.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
         Me.ptbB2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ptbB2.Location = New System.Drawing.Point(165, 121)
