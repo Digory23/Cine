@@ -37,7 +37,7 @@ Partial Class Cartelera
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblMostrarSala1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbPelicula = New System.Windows.Forms.ComboBox()
         Me.btnComprar = New System.Windows.Forms.Button()
         Me.pbPeliculas = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -63,7 +63,7 @@ Partial Class Cartelera
         Me.lblTitulo.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.Location = New System.Drawing.Point(21, 28)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(41, 15)
+        Me.lblTitulo.Size = New System.Drawing.Size(40, 15)
         Me.lblTitulo.TabIndex = 1
         Me.lblTitulo.Text = "Titulo:"
         '
@@ -93,7 +93,7 @@ Partial Class Cartelera
         Me.lblTanda.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTanda.Location = New System.Drawing.Point(21, 170)
         Me.lblTanda.Name = "lblTanda"
-        Me.lblTanda.Size = New System.Drawing.Size(42, 15)
+        Me.lblTanda.Size = New System.Drawing.Size(41, 15)
         Me.lblTanda.TabIndex = 4
         Me.lblTanda.Text = "Tanda:"
         '
@@ -103,7 +103,7 @@ Partial Class Cartelera
         Me.lblTipo.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTipo.Location = New System.Drawing.Point(21, 219)
         Me.lblTipo.Name = "lblTipo"
-        Me.lblTipo.Size = New System.Drawing.Size(34, 15)
+        Me.lblTipo.Size = New System.Drawing.Size(33, 15)
         Me.lblTipo.TabIndex = 5
         Me.lblTipo.Text = "Tipo:"
         '
@@ -197,14 +197,14 @@ Partial Class Cartelera
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "Seleccionar"
         '
-        'ComboBox1
+        'cmbPelicula
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(124, 322)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 26
+        Me.cmbPelicula.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPelicula.FormattingEnabled = True
+        Me.cmbPelicula.Location = New System.Drawing.Point(124, 322)
+        Me.cmbPelicula.Name = "cmbPelicula"
+        Me.cmbPelicula.Size = New System.Drawing.Size(121, 23)
+        Me.cmbPelicula.TabIndex = 26
         '
         'btnComprar
         '
@@ -230,7 +230,7 @@ Partial Class Cartelera
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.cmbPelicula)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.lblMostrarSala1)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -286,7 +286,7 @@ Partial Class Cartelera
     Friend WithEvents Label1 As Label
     Friend WithEvents lblMostrarSala1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbPelicula As ComboBox
     Friend WithEvents pbPeliculas As PictureBox
     Friend WithEvents btnComprar As Button
     Friend WithEvents Panel1 As Panel
