@@ -14,6 +14,7 @@
     Public Sub SetAdultos(a As Integer)
         ad = a
     End Sub
+
     Public Sub SetIndice(ind As Integer)
         i = ind
     End Sub
