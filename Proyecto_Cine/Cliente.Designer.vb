@@ -214,7 +214,7 @@ Partial Class Cliente
         '
         Me.btnAsientos.Location = New System.Drawing.Point(432, 82)
         Me.btnAsientos.Name = "btnAsientos"
-        Me.btnAsientos.Size = New System.Drawing.Size(104, 26)
+        Me.btnAsientos.Size = New System.Drawing.Size(158, 26)
         Me.btnAsientos.TabIndex = 20
         Me.btnAsientos.Text = "Consultar Asientos"
         Me.btnAsientos.UseVisualStyleBackColor = True
