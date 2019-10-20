@@ -40,6 +40,7 @@ Partial Class Peliculas
         Me.cmbSala = New System.Windows.Forms.ComboBox()
         Me.btnConfirmar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnCargar = New System.Windows.Forms.Button()
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -50,7 +51,7 @@ Partial Class Peliculas
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(40, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 15)
+        Me.Label1.Size = New System.Drawing.Size(40, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Titulo "
         '
@@ -80,13 +81,14 @@ Partial Class Peliculas
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(40, 167)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 15)
+        Me.Label4.Size = New System.Drawing.Size(41, 15)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Tanda "
         '
         'txtTitulo
         '
         Me.txtTitulo.Location = New System.Drawing.Point(119, 15)
+        Me.txtTitulo.MaxLength = 30
         Me.txtTitulo.Name = "txtTitulo"
         Me.txtTitulo.Size = New System.Drawing.Size(100, 20)
         Me.txtTitulo.TabIndex = 4
@@ -134,7 +136,7 @@ Partial Class Peliculas
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(40, 213)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 15)
+        Me.Label5.Size = New System.Drawing.Size(33, 15)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Tipo "
         '
@@ -151,7 +153,7 @@ Partial Class Peliculas
         '
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.ForeColor = System.Drawing.Color.DarkRed
-        Me.btnIngresar.Location = New System.Drawing.Point(43, 367)
+        Me.btnIngresar.Location = New System.Drawing.Point(43, 384)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(75, 23)
         Me.btnIngresar.TabIndex = 11
@@ -199,7 +201,7 @@ Partial Class Peliculas
         Me.btnConfirmar.Enabled = False
         Me.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirmar.ForeColor = System.Drawing.Color.Olive
-        Me.btnConfirmar.Location = New System.Drawing.Point(165, 367)
+        Me.btnConfirmar.Location = New System.Drawing.Point(165, 384)
         Me.btnConfirmar.Name = "btnConfirmar"
         Me.btnConfirmar.Size = New System.Drawing.Size(75, 23)
         Me.btnConfirmar.TabIndex = 20
@@ -209,6 +211,7 @@ Partial Class Peliculas
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel1.Controls.Add(Me.btnCargar)
         Me.Panel1.Controls.Add(Me.btnRegresar)
         Me.Panel1.Controls.Add(Me.cmbSala)
         Me.Panel1.Controls.Add(Me.btnConfirmar)
@@ -228,14 +231,23 @@ Partial Class Peliculas
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(63, 86)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(280, 439)
+        Me.Panel1.Size = New System.Drawing.Size(280, 445)
         Me.Panel1.TabIndex = 21
+        '
+        'btnCargar
+        '
+        Me.btnCargar.Location = New System.Drawing.Point(43, 344)
+        Me.btnCargar.Name = "btnCargar"
+        Me.btnCargar.Size = New System.Drawing.Size(197, 23)
+        Me.btnCargar.TabIndex = 22
+        Me.btnCargar.Text = "Cargar Imagen"
+        Me.btnCargar.UseVisualStyleBackColor = True
         '
         'btnRegresar
         '
         Me.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegresar.ForeColor = System.Drawing.Color.Black
-        Me.btnRegresar.Location = New System.Drawing.Point(103, 413)
+        Me.btnRegresar.Location = New System.Drawing.Point(102, 419)
         Me.btnRegresar.Name = "btnRegresar"
         Me.btnRegresar.Size = New System.Drawing.Size(75, 23)
         Me.btnRegresar.TabIndex = 21
@@ -281,4 +293,5 @@ Partial Class Peliculas
     Friend WithEvents btnConfirmar As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnRegresar As Button
+    Friend WithEvents btnCargar As Button
 End Class
