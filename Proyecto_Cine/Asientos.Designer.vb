@@ -23,99 +23,271 @@ Partial Class Asientos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lblTitulo1 = New System.Windows.Forms.Label()
+        Me.lstNoDisponible = New System.Windows.Forms.ListBox()
+        Me.lblColumnas = New System.Windows.Forms.Label()
+        Me.ptbC4 = New System.Windows.Forms.PictureBox()
+        Me.ptbC5 = New System.Windows.Forms.PictureBox()
+        Me.ptbC3 = New System.Windows.Forms.PictureBox()
+        Me.ptbC2 = New System.Windows.Forms.PictureBox()
+        Me.ptbC1 = New System.Windows.Forms.PictureBox()
+        Me.ptbB4 = New System.Windows.Forms.PictureBox()
+        Me.ptbB5 = New System.Windows.Forms.PictureBox()
+        Me.ptbB3 = New System.Windows.Forms.PictureBox()
+        Me.ptbB2 = New System.Windows.Forms.PictureBox()
+        Me.ptbB1 = New System.Windows.Forms.PictureBox()
+        Me.ptbA4 = New System.Windows.Forms.PictureBox()
+        Me.ptbA5 = New System.Windows.Forms.PictureBox()
+        Me.ptbA3 = New System.Windows.Forms.PictureBox()
+        Me.ptbA2 = New System.Windows.Forms.PictureBox()
+        Me.ptbA1 = New System.Windows.Forms.PictureBox()
+        Me.lblFilas = New System.Windows.Forms.Label()
+        Me.txtPantalla = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbC4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbC5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbC3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbC2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbC1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbB4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbB5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbB3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbB2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbB1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbA4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbA5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbA3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbA2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbA1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.PictureBox11)
-        Me.Panel1.Controls.Add(Me.PictureBox12)
-        Me.Panel1.Controls.Add(Me.PictureBox13)
-        Me.Panel1.Controls.Add(Me.PictureBox14)
-        Me.Panel1.Controls.Add(Me.PictureBox15)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.PictureBox9)
-        Me.Panel1.Controls.Add(Me.PictureBox10)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.lblTitulo1)
+        Me.Panel1.Controls.Add(Me.lstNoDisponible)
+        Me.Panel1.Controls.Add(Me.lblColumnas)
+        Me.Panel1.Controls.Add(Me.ptbC4)
+        Me.Panel1.Controls.Add(Me.ptbC5)
+        Me.Panel1.Controls.Add(Me.ptbC3)
+        Me.Panel1.Controls.Add(Me.ptbC2)
+        Me.Panel1.Controls.Add(Me.ptbC1)
+        Me.Panel1.Controls.Add(Me.ptbB4)
+        Me.Panel1.Controls.Add(Me.ptbB5)
+        Me.Panel1.Controls.Add(Me.ptbB3)
+        Me.Panel1.Controls.Add(Me.ptbB2)
+        Me.Panel1.Controls.Add(Me.ptbB1)
+        Me.Panel1.Controls.Add(Me.ptbA4)
+        Me.Panel1.Controls.Add(Me.ptbA5)
+        Me.Panel1.Controls.Add(Me.ptbA3)
+        Me.Panel1.Controls.Add(Me.ptbA2)
+        Me.Panel1.Controls.Add(Me.ptbA1)
+        Me.Panel1.Controls.Add(Me.lblFilas)
+        Me.Panel1.Controls.Add(Me.txtPantalla)
         Me.Panel1.Location = New System.Drawing.Point(21, 77)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(559, 244)
         Me.Panel1.TabIndex = 0
         '
-        'PictureBox1
+        'lblTitulo1
         '
-        Me.PictureBox1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(143, 81)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.lblTitulo1.AutoSize = True
+        Me.lblTitulo1.Location = New System.Drawing.Point(421, 81)
+        Me.lblTitulo1.Name = "lblTitulo1"
+        Me.lblTitulo1.Size = New System.Drawing.Size(117, 13)
+        Me.lblTitulo1.TabIndex = 19
+        Me.lblTitulo1.Text = "Asientos no disponibles"
         '
-        'Label2
+        'lstNoDisponible
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(84, 81)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(14, 117)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "A" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "C"
+        Me.lstNoDisponible.BackColor = System.Drawing.Color.White
+        Me.lstNoDisponible.FormattingEnabled = True
+        Me.lstNoDisponible.Location = New System.Drawing.Point(448, 100)
+        Me.lstNoDisponible.Name = "lstNoDisponible"
+        Me.lstNoDisponible.Size = New System.Drawing.Size(61, 95)
+        Me.lstNoDisponible.TabIndex = 18
         '
-        'TextBox1
+        'lblColumnas
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.GrayText
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.Window
-        Me.TextBox1.Location = New System.Drawing.Point(143, 20)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(304, 23)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "PANTALLA"
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.lblColumnas.AutoSize = True
+        Me.lblColumnas.Location = New System.Drawing.Point(106, 214)
+        Me.lblColumnas.Name = "lblColumnas"
+        Me.lblColumnas.Size = New System.Drawing.Size(289, 13)
+        Me.lblColumnas.TabIndex = 17
+        Me.lblColumnas.Text = "1                         2                  3                       4           " &
+    "       5"
+        '
+        'ptbC4
+        '
+        Me.ptbC4.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbC4.Location = New System.Drawing.Point(299, 161)
+        Me.ptbC4.Name = "ptbC4"
+        Me.ptbC4.Size = New System.Drawing.Size(38, 34)
+        Me.ptbC4.TabIndex = 16
+        Me.ptbC4.TabStop = False
+        '
+        'ptbC5
+        '
+        Me.ptbC5.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbC5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbC5.Location = New System.Drawing.Point(363, 161)
+        Me.ptbC5.Name = "ptbC5"
+        Me.ptbC5.Size = New System.Drawing.Size(38, 34)
+        Me.ptbC5.TabIndex = 15
+        Me.ptbC5.TabStop = False
+        '
+        'ptbC3
+        '
+        Me.ptbC3.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbC3.Location = New System.Drawing.Point(233, 161)
+        Me.ptbC3.Name = "ptbC3"
+        Me.ptbC3.Size = New System.Drawing.Size(38, 34)
+        Me.ptbC3.TabIndex = 14
+        Me.ptbC3.TabStop = False
+        '
+        'ptbC2
+        '
+        Me.ptbC2.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbC2.Location = New System.Drawing.Point(165, 161)
+        Me.ptbC2.Name = "ptbC2"
+        Me.ptbC2.Size = New System.Drawing.Size(38, 34)
+        Me.ptbC2.TabIndex = 13
+        Me.ptbC2.TabStop = False
+        '
+        'ptbC1
+        '
+        Me.ptbC1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbC1.Location = New System.Drawing.Point(97, 161)
+        Me.ptbC1.Name = "ptbC1"
+        Me.ptbC1.Size = New System.Drawing.Size(38, 34)
+        Me.ptbC1.TabIndex = 12
+        Me.ptbC1.TabStop = False
+        '
+        'ptbB4
+        '
+        Me.ptbB4.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbB4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbB4.Location = New System.Drawing.Point(299, 121)
+        Me.ptbB4.Name = "ptbB4"
+        Me.ptbB4.Size = New System.Drawing.Size(38, 34)
+        Me.ptbB4.TabIndex = 11
+        Me.ptbB4.TabStop = False
+        '
+        'ptbB5
+        '
+        Me.ptbB5.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbB5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbB5.Location = New System.Drawing.Point(363, 121)
+        Me.ptbB5.Name = "ptbB5"
+        Me.ptbB5.Size = New System.Drawing.Size(38, 34)
+        Me.ptbB5.TabIndex = 10
+        Me.ptbB5.TabStop = False
+        '
+        'ptbB3
+        '
+        Me.ptbB3.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbB3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbB3.Location = New System.Drawing.Point(233, 121)
+        Me.ptbB3.Name = "ptbB3"
+        Me.ptbB3.Size = New System.Drawing.Size(38, 34)
+        Me.ptbB3.TabIndex = 9
+        Me.ptbB3.TabStop = False
+        '
+        'ptbB2
+        '
+        Me.ptbB2.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbB2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbB2.Location = New System.Drawing.Point(165, 121)
+        Me.ptbB2.Name = "ptbB2"
+        Me.ptbB2.Size = New System.Drawing.Size(38, 34)
+        Me.ptbB2.TabIndex = 8
+        Me.ptbB2.TabStop = False
+        '
+        'ptbB1
+        '
+        Me.ptbB1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbB1.Location = New System.Drawing.Point(97, 121)
+        Me.ptbB1.Name = "ptbB1"
+        Me.ptbB1.Size = New System.Drawing.Size(38, 34)
+        Me.ptbB1.TabIndex = 7
+        Me.ptbB1.TabStop = False
+        '
+        'ptbA4
+        '
+        Me.ptbA4.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbA4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbA4.Location = New System.Drawing.Point(299, 81)
+        Me.ptbA4.Name = "ptbA4"
+        Me.ptbA4.Size = New System.Drawing.Size(38, 34)
+        Me.ptbA4.TabIndex = 6
+        Me.ptbA4.TabStop = False
+        '
+        'ptbA5
+        '
+        Me.ptbA5.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbA5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbA5.Location = New System.Drawing.Point(363, 81)
+        Me.ptbA5.Name = "ptbA5"
+        Me.ptbA5.Size = New System.Drawing.Size(38, 34)
+        Me.ptbA5.TabIndex = 5
+        Me.ptbA5.TabStop = False
+        '
+        'ptbA3
+        '
+        Me.ptbA3.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbA3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbA3.Location = New System.Drawing.Point(233, 81)
+        Me.ptbA3.Name = "ptbA3"
+        Me.ptbA3.Size = New System.Drawing.Size(38, 34)
+        Me.ptbA3.TabIndex = 4
+        Me.ptbA3.TabStop = False
+        '
+        'ptbA2
+        '
+        Me.ptbA2.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbA2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbA2.Location = New System.Drawing.Point(165, 81)
+        Me.ptbA2.Name = "ptbA2"
+        Me.ptbA2.Size = New System.Drawing.Size(38, 34)
+        Me.ptbA2.TabIndex = 3
+        Me.ptbA2.TabStop = False
+        '
+        'ptbA1
+        '
+        Me.ptbA1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
+        Me.ptbA1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ptbA1.Location = New System.Drawing.Point(97, 81)
+        Me.ptbA1.Name = "ptbA1"
+        Me.ptbA1.Size = New System.Drawing.Size(38, 34)
+        Me.ptbA1.TabIndex = 2
+        Me.ptbA1.TabStop = False
+        '
+        'lblFilas
+        '
+        Me.lblFilas.AutoSize = True
+        Me.lblFilas.Location = New System.Drawing.Point(38, 81)
+        Me.lblFilas.Name = "lblFilas"
+        Me.lblFilas.Size = New System.Drawing.Size(14, 117)
+        Me.lblFilas.TabIndex = 1
+        Me.lblFilas.Text = "A" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "C"
+        '
+        'txtPantalla
+        '
+        Me.txtPantalla.BackColor = System.Drawing.SystemColors.GrayText
+        Me.txtPantalla.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPantalla.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtPantalla.Location = New System.Drawing.Point(97, 20)
+        Me.txtPantalla.Name = "txtPantalla"
+        Me.txtPantalla.ReadOnly = True
+        Me.txtPantalla.Size = New System.Drawing.Size(304, 23)
+        Me.txtPantalla.TabIndex = 0
+        Me.txtPantalla.Text = "PANTALLA"
+        Me.txtPantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
@@ -129,156 +301,6 @@ Partial Class Asientos
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Control de Asientos"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(211, 81)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(279, 81)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox3.TabIndex = 4
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(409, 81)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox4.TabIndex = 5
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox5.Location = New System.Drawing.Point(345, 81)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox5.TabIndex = 6
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox6.Location = New System.Drawing.Point(345, 121)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox6.TabIndex = 11
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox7.Location = New System.Drawing.Point(409, 121)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox7.TabIndex = 10
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox8.Location = New System.Drawing.Point(279, 121)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox8.TabIndex = 9
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox9.Location = New System.Drawing.Point(211, 121)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox9.TabIndex = 8
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox10.Location = New System.Drawing.Point(143, 121)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox10.TabIndex = 7
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox11.Location = New System.Drawing.Point(345, 161)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox11.TabIndex = 16
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox12.Location = New System.Drawing.Point(409, 161)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox12.TabIndex = 15
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox13.Location = New System.Drawing.Point(279, 161)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox13.TabIndex = 14
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox14.Location = New System.Drawing.Point(211, 161)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox14.TabIndex = 13
-        Me.PictureBox14.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.theatre_seat
-        Me.PictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox15.Location = New System.Drawing.Point(143, 161)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(38, 34)
-        Me.PictureBox15.TabIndex = 12
-        Me.PictureBox15.TabStop = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(152, 214)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(289, 13)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "1                         2                  3                       4           " &
-    "       5"
-        '
         'Asientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -291,21 +313,21 @@ Partial Class Asientos
         Me.Text = "Asientos"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbC4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbC5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbC3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbC2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbC1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbB4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbB5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbB3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbB2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbB1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbA4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbA5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbA3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbA2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbA1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -313,22 +335,24 @@ Partial Class Asientos
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox13 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents PictureBox15 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents txtPantalla As TextBox
+    Friend WithEvents ptbA1 As PictureBox
+    Friend WithEvents lblFilas As Label
+    Friend WithEvents lblColumnas As Label
+    Friend WithEvents ptbC4 As PictureBox
+    Friend WithEvents ptbC5 As PictureBox
+    Friend WithEvents ptbC3 As PictureBox
+    Friend WithEvents ptbC2 As PictureBox
+    Friend WithEvents ptbC1 As PictureBox
+    Friend WithEvents ptbB4 As PictureBox
+    Friend WithEvents ptbB5 As PictureBox
+    Friend WithEvents ptbB3 As PictureBox
+    Friend WithEvents ptbB2 As PictureBox
+    Friend WithEvents ptbB1 As PictureBox
+    Friend WithEvents ptbA4 As PictureBox
+    Friend WithEvents ptbA5 As PictureBox
+    Friend WithEvents ptbA3 As PictureBox
+    Friend WithEvents ptbA2 As PictureBox
+    Friend WithEvents lblTitulo1 As Label
+    Friend WithEvents lstNoDisponible As ListBox
 End Class
