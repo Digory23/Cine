@@ -1,5 +1,4 @@
-﻿Public Class DatosCompra
-
+﻿Module DatosCompras
     Private nom, fec As String
     Private ni, ad, i As Integer
     'Sets de los Datos de Compra
@@ -15,7 +14,6 @@
     Public Sub SetAdultos(a As Integer)
         ad = a
     End Sub
-
     Public Sub SetIndice(ind As Integer)
         i = ind
     End Sub
@@ -36,5 +34,4 @@
     Public Function GetIndice()
         Return i
     End Function
-
-End Class
+End Module

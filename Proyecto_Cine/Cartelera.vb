@@ -5,6 +5,7 @@
 
     Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
         Cliente.Show()
+
     End Sub
 
     Private Sub CmbPelicula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPelicula.SelectedIndexChanged
