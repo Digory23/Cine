@@ -22,7 +22,7 @@
         lblTanda1.Text = Pelicula.GetTanda(ind)
         lblTipo1.Text = Pelicula.GetTipo(ind)
         lblMostrarSala1.Text = Pelicula.GetSala(ind)
-
+        pbPeliculas.Image = Pelicula.GetRuta(ind)
     End Sub
 
     Private Sub Cartelera_Load(sender As Object, e As EventArgs) Handles MyBase.Load
