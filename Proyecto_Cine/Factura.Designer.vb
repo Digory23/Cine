@@ -38,6 +38,7 @@ Partial Class Factura
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -45,17 +46,20 @@ Partial Class Factura
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnRegresar = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtDescuento = New System.Windows.Forms.Panel()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.gbxDetalle.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.txtDescuento.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -204,6 +208,10 @@ Partial Class Factura
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtTotal)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -218,6 +226,16 @@ Partial Class Factura
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Total a Pagar"
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label15.Location = New System.Drawing.Point(76, 198)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(176, 13)
+        Me.Label15.TabIndex = 26
+        Me.Label15.Text = "Mensaje si tiene pase de cortesia"
+        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(212, 155)
@@ -229,7 +247,7 @@ Partial Class Factura
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(33, 164)
+        Me.Label10.Location = New System.Drawing.Point(33, 157)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(94, 13)
         Me.Label10.TabIndex = 24
@@ -237,7 +255,7 @@ Partial Class Factura
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(212, 103)
+        Me.TextBox2.Location = New System.Drawing.Point(212, 122)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(78, 22)
@@ -246,7 +264,7 @@ Partial Class Factura
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(33, 109)
+        Me.Label9.Location = New System.Drawing.Point(33, 125)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 13)
         Me.Label9.TabIndex = 22
@@ -254,7 +272,7 @@ Partial Class Factura
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(212, 56)
+        Me.TextBox1.Location = New System.Drawing.Point(212, 91)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(78, 22)
@@ -263,7 +281,7 @@ Partial Class Factura
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(33, 59)
+        Me.Label5.Location = New System.Drawing.Point(33, 95)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(87, 13)
         Me.Label5.TabIndex = 0
@@ -280,24 +298,54 @@ Partial Class Factura
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'txtDescuento
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.Label16)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.btnRegresar)
-        Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Controls.Add(Me.gbxDetalle)
-        Me.Panel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel1.Location = New System.Drawing.Point(8, 9)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(759, 517)
-        Me.Panel1.TabIndex = 3
+        Me.txtDescuento.BackColor = System.Drawing.Color.White
+        Me.txtDescuento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescuento.Controls.Add(Me.Label16)
+        Me.txtDescuento.Controls.Add(Me.Label14)
+        Me.txtDescuento.Controls.Add(Me.PictureBox1)
+        Me.txtDescuento.Controls.Add(Me.Label13)
+        Me.txtDescuento.Controls.Add(Me.Label12)
+        Me.txtDescuento.Controls.Add(Me.Label11)
+        Me.txtDescuento.Controls.Add(Me.btnRegresar)
+        Me.txtDescuento.Controls.Add(Me.GroupBox1)
+        Me.txtDescuento.Controls.Add(Me.gbxDetalle)
+        Me.txtDescuento.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescuento.Location = New System.Drawing.Point(8, 9)
+        Me.txtDescuento.Name = "txtDescuento"
+        Me.txtDescuento.Size = New System.Drawing.Size(759, 517)
+        Me.txtDescuento.TabIndex = 3
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(341, 89)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(85, 17)
+        Me.Label16.TabIndex = 8
+        Me.Label16.Text = "Fecha de hoy"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(296, 439)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(176, 20)
+        Me.Label14.TabIndex = 7
+        Me.Label14.Text = "¡Gracias por preferirnos!"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.barcode
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(324, 410)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(115, 26)
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'Label13
         '
@@ -329,45 +377,39 @@ Partial Class Factura
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Cinexxxxx Panamá, S.A."
         '
-        'PictureBox1
+        'TextBox4
         '
-        Me.PictureBox1.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.barcode
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(324, 410)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(115, 26)
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.TextBox4.Location = New System.Drawing.Point(212, 58)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(78, 22)
+        Me.TextBox4.TabIndex = 28
         '
-        'Label14
+        'Label17
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(296, 439)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(176, 20)
-        Me.Label14.TabIndex = 7
-        Me.Label14.Text = "¡Gracias por preferirnos!"
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(33, 63)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(65, 13)
+        Me.Label17.TabIndex = 27
+        Me.Label17.Text = "Descuento:"
         '
-        'Label15
+        'txtTotal
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label15.Location = New System.Drawing.Point(76, 198)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(176, 13)
-        Me.Label15.TabIndex = 26
-        Me.Label15.Text = "Mensaje si tiene pase de cortesia"
+        Me.txtTotal.Location = New System.Drawing.Point(212, 28)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.ReadOnly = True
+        Me.txtTotal.Size = New System.Drawing.Size(78, 22)
+        Me.txtTotal.TabIndex = 30
         '
-        'Label16
+        'Label18
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(341, 89)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(85, 17)
-        Me.Label16.TabIndex = 8
-        Me.Label16.Text = "Fecha de hoy"
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(33, 35)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(34, 13)
+        Me.Label18.TabIndex = 29
+        Me.Label18.Text = "Total:"
         '
         'Factura
         '
@@ -376,15 +418,15 @@ Partial Class Factura
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.movieseats
         Me.ClientSize = New System.Drawing.Size(779, 532)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.txtDescuento)
         Me.Name = "Factura"
         Me.Text = "Factura"
         Me.gbxDetalle.ResumeLayout(False)
         Me.gbxDetalle.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.txtDescuento.ResumeLayout(False)
+        Me.txtDescuento.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -413,7 +455,7 @@ Partial Class Factura
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents btnRegresar As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txtDescuento As Panel
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
@@ -421,4 +463,8 @@ Partial Class Factura
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents txtTotal As TextBox
+    Friend WithEvents Label18 As Label
 End Class
