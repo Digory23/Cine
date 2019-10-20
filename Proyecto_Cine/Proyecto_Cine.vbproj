@@ -72,7 +72,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Asientos.Designer.vb">
     <Compile Include="Bienvenida.Designer.vb">
       <DependentUpon>Bienvenida.vb</DependentUpon>
     </Compile>

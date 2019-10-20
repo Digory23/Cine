@@ -1,5 +1,5 @@
 ﻿Module DatosCompras
-    Private nom, fec As String
+    Private nom, fec, asi As String
     Private ni, ad, i As Integer
     'Sets de los Datos de Compra
     Public Sub SetNombre(n As String)
@@ -13,6 +13,9 @@
     End Sub
     Public Sub SetAdultos(a As Integer)
         ad = a
+    End Sub
+    Public Sub SetAsientos(a As String)
+        asi = a
     End Sub
     Public Sub SetIndice(ind As Integer)
         i = ind
@@ -30,6 +33,9 @@
     End Function
     Public Function GetAdultos()
         Return ad
+    End Function
+    Public Function GetAsientos()
+        Return asi
     End Function
     Public Function GetIndice()
         Return i
