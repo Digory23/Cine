@@ -27,12 +27,13 @@ Partial Class Cliente
         Me.txtNomCliente = New System.Windows.Forms.TextBox()
         Me.btnFacturar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtAsientosSelec = New System.Windows.Forms.TextBox()
+        Me.txtPelicula = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.chkCortesia = New System.Windows.Forms.CheckBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnQuitar = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lstAsientos = New System.Windows.Forms.ListBox()
@@ -46,11 +47,10 @@ Partial Class Cliente
         Me.txtSala = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.numAdultos = New System.Windows.Forms.NumericUpDown()
+        Me.numNinos = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.lstAsientos2 = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,8 +58,8 @@ Partial Class Cliente
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numAdultos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numNinos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -99,14 +99,14 @@ Partial Class Cliente
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.lstAsientos2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtAsientosSelec)
+        Me.GroupBox1.Controls.Add(Me.txtPelicula)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.chkCortesia)
         Me.GroupBox1.Controls.Add(Me.btnFacturar)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.btnQuitar)
+        Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.lstAsientos)
@@ -123,13 +123,21 @@ Partial Class Cliente
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         '
-        'TextBox1
+        'txtAsientosSelec
         '
-        Me.TextBox1.Location = New System.Drawing.Point(406, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(202, 23)
-        Me.TextBox1.TabIndex = 31
+        Me.txtAsientosSelec.Location = New System.Drawing.Point(406, 251)
+        Me.txtAsientosSelec.Multiline = True
+        Me.txtAsientosSelec.Name = "txtAsientosSelec"
+        Me.txtAsientosSelec.Size = New System.Drawing.Size(100, 64)
+        Me.txtAsientosSelec.TabIndex = 32
+        '
+        'txtPelicula
+        '
+        Me.txtPelicula.Location = New System.Drawing.Point(406, 40)
+        Me.txtPelicula.Name = "txtPelicula"
+        Me.txtPelicula.ReadOnly = True
+        Me.txtPelicula.Size = New System.Drawing.Size(202, 23)
+        Me.txtPelicula.TabIndex = 31
         '
         'Label5
         '
@@ -150,12 +158,12 @@ Partial Class Cliente
         Me.chkCortesia.Text = "Cortesía"
         Me.chkCortesia.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'dtpFecha
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(87, 66)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(195, 23)
-        Me.DateTimePicker1.TabIndex = 27
+        Me.dtpFecha.Location = New System.Drawing.Point(87, 66)
+        Me.dtpFecha.Name = "dtpFecha"
+        Me.dtpFecha.Size = New System.Drawing.Size(195, 23)
+        Me.dtpFecha.TabIndex = 27
         '
         'Label9
         '
@@ -166,14 +174,14 @@ Partial Class Cliente
         Me.Label9.TabIndex = 26
         Me.Label9.Text = "Fecha:"
         '
-        'btnQuitar
+        'btnLimpiar
         '
-        Me.btnQuitar.Location = New System.Drawing.Point(537, 183)
-        Me.btnQuitar.Name = "btnQuitar"
-        Me.btnQuitar.Size = New System.Drawing.Size(74, 26)
-        Me.btnQuitar.TabIndex = 25
-        Me.btnQuitar.Text = "Limpiar"
-        Me.btnQuitar.UseVisualStyleBackColor = True
+        Me.btnLimpiar.Location = New System.Drawing.Point(537, 183)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(74, 26)
+        Me.btnLimpiar.TabIndex = 25
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'btnAgregar
         '
@@ -301,8 +309,8 @@ Partial Class Cliente
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.NumericUpDown2)
-        Me.GroupBox2.Controls.Add(Me.NumericUpDown1)
+        Me.GroupBox2.Controls.Add(Me.numAdultos)
+        Me.GroupBox2.Controls.Add(Me.numNinos)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Location = New System.Drawing.Point(91, 107)
@@ -312,19 +320,19 @@ Partial Class Cliente
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Cantidad de Boletos"
         '
-        'NumericUpDown2
+        'numAdultos
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(69, 62)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(50, 23)
-        Me.NumericUpDown2.TabIndex = 6
+        Me.numAdultos.Location = New System.Drawing.Point(69, 62)
+        Me.numAdultos.Name = "numAdultos"
+        Me.numAdultos.Size = New System.Drawing.Size(50, 23)
+        Me.numAdultos.TabIndex = 6
         '
-        'NumericUpDown1
+        'numNinos
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(68, 32)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(50, 23)
-        Me.NumericUpDown1.TabIndex = 5
+        Me.numNinos.Location = New System.Drawing.Point(68, 32)
+        Me.numNinos.Name = "numNinos"
+        Me.numNinos.Size = New System.Drawing.Size(50, 23)
+        Me.numNinos.TabIndex = 5
         '
         'Label2
         '
@@ -344,16 +352,6 @@ Partial Class Cliente
         Me.Label10.Size = New System.Drawing.Size(196, 30)
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Compra del boleto"
-        '
-        'lstAsientos2
-        '
-        Me.lstAsientos2.FormattingEnabled = True
-        Me.lstAsientos2.ItemHeight = 15
-        Me.lstAsientos2.Location = New System.Drawing.Point(406, 246)
-        Me.lstAsientos2.Name = "lstAsientos2"
-        Me.lstAsientos2.SelectionMode = System.Windows.Forms.SelectionMode.None
-        Me.lstAsientos2.Size = New System.Drawing.Size(100, 49)
-        Me.lstAsientos2.TabIndex = 32
         '
         'Cliente
         '
@@ -379,8 +377,8 @@ Partial Class Cliente
         Me.SplitContainer1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numAdultos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numNinos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -390,12 +388,12 @@ Partial Class Cliente
     Friend WithEvents txtNomCliente As TextBox
     Friend WithEvents btnFacturar As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPelicula As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents chkCortesia As CheckBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtpFecha As DateTimePicker
     Friend WithEvents Label9 As Label
-    Friend WithEvents btnQuitar As Button
+    Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents lstAsientos As ListBox
@@ -408,10 +406,10 @@ Partial Class Cliente
     Friend WithEvents rdbRegular As RadioButton
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents numAdultos As NumericUpDown
+    Friend WithEvents numNinos As NumericUpDown
     Friend WithEvents Label2 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents txtSala As TextBox
-    Friend WithEvents lstAsientos2 As ListBox
+    Friend WithEvents txtAsientosSelec As TextBox
 End Class
