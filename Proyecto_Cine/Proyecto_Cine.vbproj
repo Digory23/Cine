@@ -90,7 +90,7 @@
     <Compile Include="Cliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatosCompras.vb" />
+    <Compile Include="DatosCompra.vb" />
     <Compile Include="Factura.Designer.vb">
       <DependentUpon>Factura.vb</DependentUpon>
     </Compile>
