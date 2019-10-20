@@ -64,6 +64,7 @@ Partial Class Asientos
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.lblTitulo1)
         Me.Panel1.Controls.Add(Me.lstNoDisponible)
         Me.Panel1.Controls.Add(Me.lblColumnas)
