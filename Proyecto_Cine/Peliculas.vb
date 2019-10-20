@@ -13,29 +13,27 @@ Public Class Peliculas
         Dim opc As Boolean = True
         Dim titulo, genero, tanda, tipo, año, duracion As String
         Dim sala As Char
-        If (cont = 2) Then 'Una vez ingresado los datos se deshabilita el boton 
+        If (cont = 3) Then 'Una vez ingresado los datos se deshabilita el boton 
             btnIngresar.Enabled = False
             btnConfirmar.Enabled = True
+        ElseIf (cont < 3) Then
+
+            titulo = txtTitulo.Text
+            año = txtAño.Text
+            genero = cmbGenero.Text
+            tanda = cmbTanda.Text
+            tipo = cmbTipo.Text
+            duracion = txtDuracion.Text
+            sala = cmbSala.Text
+
+            Call validar()
+
+
+            Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
+            cont = cont + 1
+            MsgBox(cont, MsgBoxStyle.Critical)
+            Call Limpiar()
         End If
-
-        btnIngresar.Enabled = False
-
-        titulo = txtTitulo.Text
-        año = txtAño.Text
-        genero = cmbGenero.Text
-        tanda = cmbTanda.Text
-        tipo = cmbTipo.Text
-        duracion = txtDuracion.Text
-        sala = cmbSala.Text
-
-        Call validar()
-
-
-        Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
-        cont = cont + 1
-
-        Call Limpiar()
-
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
@@ -99,6 +97,7 @@ Public Class Peliculas
             e.Cancel = True
         End If
     End Sub
+
 
     Private Sub txtAño_Validating(sender As Object, e As CancelEventArgs) Handles txtAño.Validating
         If txtAño.Text <= 1990 And txtAño.Text >= 2019 Then

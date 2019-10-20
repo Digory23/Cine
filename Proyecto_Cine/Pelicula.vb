@@ -1,6 +1,6 @@
 ﻿Module Pelicula
 
-    Private peli(2) As pelicula 'Arreglo donde se almacenaran los datos de la pelicula
+    Private peli(3) As pelicula 'Arreglo donde se almacenaran los datos de la pelicula
 
     'Este metodo inserta los datos que provienen de el form peliculas al arreglo
     Public Sub Cargar(tit As String, gen As String, tanda As String, tipo As String, año As String, duracion As String, sala As Char, cont As Integer, ruta As Image)
