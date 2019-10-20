@@ -363,6 +363,7 @@ Partial Class Totales
         '
         Me.TextBox1.Location = New System.Drawing.Point(249, 362)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(56, 22)
         Me.TextBox1.TabIndex = 6
         '
@@ -370,6 +371,7 @@ Partial Class Totales
         '
         Me.TextBox2.Location = New System.Drawing.Point(521, 388)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(58, 22)
         Me.TextBox2.TabIndex = 7
         '
@@ -377,6 +379,7 @@ Partial Class Totales
         '
         Me.TextBox3.Location = New System.Drawing.Point(521, 362)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(58, 22)
         Me.TextBox3.TabIndex = 8
         '
@@ -384,6 +387,7 @@ Partial Class Totales
         '
         Me.TextBox4.Location = New System.Drawing.Point(249, 388)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(56, 22)
         Me.TextBox4.TabIndex = 9
         '
@@ -391,6 +395,7 @@ Partial Class Totales
         '
         Me.TextBox5.Location = New System.Drawing.Point(249, 418)
         Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(56, 22)
         Me.TextBox5.TabIndex = 10
         '
