@@ -36,7 +36,7 @@ Partial Class Cliente
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstAsientos = New System.Windows.Forms.ListBox()
         Me.btnAsientos = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -44,13 +44,13 @@ Partial Class Cliente
         Me.rdbEstreno = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.rdbRegular = New System.Windows.Forms.RadioButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtSala = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,7 +109,7 @@ Partial Class Cliente
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
+        Me.GroupBox1.Controls.Add(Me.lstAsientos)
         Me.GroupBox1.Controls.Add(Me.btnAsientos)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
@@ -200,15 +200,16 @@ Partial Class Cliente
         Me.Label8.TabIndex = 22
         Me.Label8.Text = "Asientos Seleccionados: "
         '
-        'ListBox1
+        'lstAsientos
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 15
-        Me.ListBox1.Items.AddRange(New Object() {"A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C2", "C3", "C4", "C5"})
-        Me.ListBox1.Location = New System.Drawing.Point(406, 156)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(100, 49)
-        Me.ListBox1.TabIndex = 21
+        Me.lstAsientos.FormattingEnabled = True
+        Me.lstAsientos.ItemHeight = 15
+        Me.lstAsientos.Items.AddRange(New Object() {"A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C2", "C3", "C4", "C5"})
+        Me.lstAsientos.Location = New System.Drawing.Point(406, 156)
+        Me.lstAsientos.Name = "lstAsientos"
+        Me.lstAsientos.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
+        Me.lstAsientos.Size = New System.Drawing.Size(100, 49)
+        Me.lstAsientos.TabIndex = 21
         '
         'btnAsientos
         '
@@ -251,7 +252,7 @@ Partial Class Cliente
         '
         'SplitContainer1.Panel2
         '
-        Me.SplitContainer1.Panel2.Controls.Add(Me.ComboBox1)
+        Me.SplitContainer1.Panel2.Controls.Add(Me.txtSala)
         Me.SplitContainer1.Panel2.Controls.Add(Me.Label6)
         Me.SplitContainer1.Size = New System.Drawing.Size(216, 101)
         Me.SplitContainer1.SplitterDistance = 107
@@ -287,15 +288,6 @@ Partial Class Cliente
         Me.rdbRegular.TabStop = True
         Me.rdbRegular.Text = "Regular"
         Me.rdbRegular.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 44)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(79, 23)
-        Me.ComboBox1.TabIndex = 2
         '
         'Label6
         '
@@ -352,6 +344,14 @@ Partial Class Cliente
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Compra del boleto"
         '
+        'txtSala
+        '
+        Me.txtSala.Location = New System.Drawing.Point(16, 44)
+        Me.txtSala.Name = "txtSala"
+        Me.txtSala.ReadOnly = True
+        Me.txtSala.Size = New System.Drawing.Size(75, 23)
+        Me.txtSala.TabIndex = 32
+        '
         'Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -396,7 +396,7 @@ Partial Class Cliente
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents Label8 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstAsientos As ListBox
     Friend WithEvents btnAsientos As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox3 As GroupBox
@@ -404,11 +404,11 @@ Partial Class Cliente
     Friend WithEvents rdbEstreno As RadioButton
     Friend WithEvents Label4 As Label
     Friend WithEvents rdbRegular As RadioButton
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label2 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents txtSala As TextBox
 End Class
