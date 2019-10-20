@@ -73,11 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Asientos.Designer.vb">
-      <DependentUpon>Asientos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Asientos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Bienvenida.Designer.vb">
       <DependentUpon>Bienvenida.vb</DependentUpon>
     </Compile>
@@ -96,6 +91,7 @@
     <Compile Include="Cliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DatosCompras.vb" />
     <Compile Include="Factura.Designer.vb">
       <DependentUpon>Factura.vb</DependentUpon>
     </Compile>
@@ -132,9 +128,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Asientos.resx">
-      <DependentUpon>Asientos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.vb</DependentUpon>
     </EmbeddedResource>
@@ -189,18 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\barcode.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\cinemapeople.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\people.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\mask.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\theatre-seat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
