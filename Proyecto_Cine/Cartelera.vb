@@ -3,11 +3,16 @@
         Inicio.Show()
     End Sub
 
+    'Evento que lo envia al formulario de Cliente
     Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
+        Dim ind As Integer
+        ind = cmbPelicula.SelectedIndex 'Obtiene el indice de la pelicula seleccionada
         Cliente.Show()
-
+        DatosCompras.SetIndice(ind)
     End Sub
 
+
+    'Este evento setea los datos a los labels dependiendo de la pelicula seleccionada
     Private Sub CmbPelicula_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPelicula.SelectedIndexChanged
         Dim ind As Integer
         ind = cmbPelicula.SelectedIndex
@@ -21,6 +26,7 @@
     End Sub
 
     Private Sub Cartelera_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Aqui se cargan las peliculas al combo box
         cmbPelicula.Items.Add(Pelicula.GetTitulo(0))
         cmbPelicula.Items.Add(Pelicula.GetTitulo(1))
         cmbPelicula.Items.Add(Pelicula.GetTitulo(2))
