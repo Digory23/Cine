@@ -33,7 +33,6 @@ Partial Class Cliente
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnQuitar = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lstAsientos = New System.Windows.Forms.ListBox()
@@ -44,13 +43,14 @@ Partial Class Cliente
         Me.rdbEstreno = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.rdbRegular = New System.Windows.Forms.RadioButton()
+        Me.txtSala = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtSala = New System.Windows.Forms.TextBox()
+        Me.lstAsientos2 = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +89,7 @@ Partial Class Cliente
         '
         'btnFacturar
         '
-        Me.btnFacturar.Location = New System.Drawing.Point(451, 299)
+        Me.btnFacturar.Location = New System.Drawing.Point(550, 288)
         Me.btnFacturar.Name = "btnFacturar"
         Me.btnFacturar.Size = New System.Drawing.Size(75, 23)
         Me.btnFacturar.TabIndex = 16
@@ -99,6 +99,7 @@ Partial Class Cliente
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.lstAsientos2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.chkCortesia)
@@ -106,7 +107,6 @@ Partial Class Cliente
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.btnQuitar)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.btnAgregar)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.lstAsientos)
@@ -143,7 +143,7 @@ Partial Class Cliente
         'chkCortesia
         '
         Me.chkCortesia.AutoSize = True
-        Me.chkCortesia.Location = New System.Drawing.Point(460, 273)
+        Me.chkCortesia.Location = New System.Drawing.Point(550, 246)
         Me.chkCortesia.Name = "chkCortesia"
         Me.chkCortesia.Size = New System.Drawing.Size(69, 19)
         Me.chkCortesia.TabIndex = 29
@@ -174,13 +174,6 @@ Partial Class Cliente
         Me.btnQuitar.TabIndex = 25
         Me.btnQuitar.Text = "Limpiar"
         Me.btnQuitar.UseVisualStyleBackColor = True
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(399, 241)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(163, 23)
-        Me.TextBox3.TabIndex = 24
         '
         'btnAgregar
         '
@@ -289,6 +282,14 @@ Partial Class Cliente
         Me.rdbRegular.Text = "Regular"
         Me.rdbRegular.UseVisualStyleBackColor = True
         '
+        'txtSala
+        '
+        Me.txtSala.Location = New System.Drawing.Point(16, 44)
+        Me.txtSala.Name = "txtSala"
+        Me.txtSala.ReadOnly = True
+        Me.txtSala.Size = New System.Drawing.Size(75, 23)
+        Me.txtSala.TabIndex = 32
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -344,13 +345,15 @@ Partial Class Cliente
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Compra del boleto"
         '
-        'txtSala
+        'lstAsientos2
         '
-        Me.txtSala.Location = New System.Drawing.Point(16, 44)
-        Me.txtSala.Name = "txtSala"
-        Me.txtSala.ReadOnly = True
-        Me.txtSala.Size = New System.Drawing.Size(75, 23)
-        Me.txtSala.TabIndex = 32
+        Me.lstAsientos2.FormattingEnabled = True
+        Me.lstAsientos2.ItemHeight = 15
+        Me.lstAsientos2.Location = New System.Drawing.Point(406, 246)
+        Me.lstAsientos2.Name = "lstAsientos2"
+        Me.lstAsientos2.SelectionMode = System.Windows.Forms.SelectionMode.None
+        Me.lstAsientos2.Size = New System.Drawing.Size(100, 49)
+        Me.lstAsientos2.TabIndex = 32
         '
         'Cliente
         '
@@ -393,7 +396,6 @@ Partial Class Cliente
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label9 As Label
     Friend WithEvents btnQuitar As Button
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents lstAsientos As ListBox
@@ -411,4 +413,5 @@ Partial Class Cliente
     Friend WithEvents Label2 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents txtSala As TextBox
+    Friend WithEvents lstAsientos2 As ListBox
 End Class
