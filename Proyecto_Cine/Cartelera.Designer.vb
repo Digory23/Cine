@@ -63,7 +63,7 @@ Partial Class Cartelera
         Me.lblTitulo.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.Location = New System.Drawing.Point(21, 28)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(40, 15)
+        Me.lblTitulo.Size = New System.Drawing.Size(41, 15)
         Me.lblTitulo.TabIndex = 1
         Me.lblTitulo.Text = "Titulo:"
         '
@@ -93,7 +93,7 @@ Partial Class Cartelera
         Me.lblTanda.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTanda.Location = New System.Drawing.Point(21, 170)
         Me.lblTanda.Name = "lblTanda"
-        Me.lblTanda.Size = New System.Drawing.Size(41, 15)
+        Me.lblTanda.Size = New System.Drawing.Size(42, 15)
         Me.lblTanda.TabIndex = 4
         Me.lblTanda.Text = "Tanda:"
         '
@@ -103,7 +103,7 @@ Partial Class Cartelera
         Me.lblTipo.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTipo.Location = New System.Drawing.Point(21, 219)
         Me.lblTipo.Name = "lblTipo"
-        Me.lblTipo.Size = New System.Drawing.Size(33, 15)
+        Me.lblTipo.Size = New System.Drawing.Size(34, 15)
         Me.lblTipo.TabIndex = 5
         Me.lblTipo.Text = "Tipo:"
         '
@@ -221,6 +221,7 @@ Partial Class Cartelera
         'pbPeliculas
         '
         Me.pbPeliculas.BackColor = System.Drawing.Color.Transparent
+        Me.pbPeliculas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbPeliculas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pbPeliculas.Location = New System.Drawing.Point(330, 66)
         Me.pbPeliculas.Name = "pbPeliculas"

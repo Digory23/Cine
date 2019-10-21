@@ -20,11 +20,11 @@
         Asientos.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub BtnTotales_Click(sender As Object, e As EventArgs) Handles btnTotales.Click
         Totales.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         End
     End Sub
 End Class
