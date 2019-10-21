@@ -27,7 +27,6 @@ Partial Class Cliente
         Me.txtNomCliente = New System.Windows.Forms.TextBox()
         Me.btnFacturar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtAsientosSelec = New System.Windows.Forms.TextBox()
         Me.txtPelicula = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.chkCortesia = New System.Windows.Forms.CheckBox()
@@ -51,6 +50,7 @@ Partial Class Cliente
         Me.numNinos = New System.Windows.Forms.NumericUpDown()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtAsientosSelec = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,14 +122,6 @@ Partial Class Cliente
         Me.GroupBox1.Size = New System.Drawing.Size(687, 339)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
-        '
-        'txtAsientosSelec
-        '
-        Me.txtAsientosSelec.Location = New System.Drawing.Point(406, 251)
-        Me.txtAsientosSelec.Multiline = True
-        Me.txtAsientosSelec.Name = "txtAsientosSelec"
-        Me.txtAsientosSelec.Size = New System.Drawing.Size(100, 64)
-        Me.txtAsientosSelec.TabIndex = 32
         '
         'txtPelicula
         '
@@ -352,6 +344,15 @@ Partial Class Cliente
         Me.Label10.Size = New System.Drawing.Size(196, 30)
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Compra del boleto"
+        '
+        'txtAsientosSelec
+        '
+        Me.txtAsientosSelec.Location = New System.Drawing.Point(406, 258)
+        Me.txtAsientosSelec.Multiline = True
+        Me.txtAsientosSelec.Name = "txtAsientosSelec"
+        Me.txtAsientosSelec.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtAsientosSelec.Size = New System.Drawing.Size(100, 62)
+        Me.txtAsientosSelec.TabIndex = 32
         '
         'Cliente
         '
