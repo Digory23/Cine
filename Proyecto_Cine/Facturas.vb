@@ -1,7 +1,7 @@
 ﻿Module Facturas
     Private n1, n2, n3, n4, ad1, ad2, ad3, ad4, acum1, acum2, acum3, acum4, rec, norec, cort, totnin, totadul As Integer
 
-    'Sets de los Datos de Compra
+    'Sets de los datos 
     Public Sub SetAcumNiñosS1(n As Integer)
         n1 = n
     End Sub
