@@ -140,6 +140,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Asientos.resx">
+      <DependentUpon>Asientos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.vb</DependentUpon>
     </EmbeddedResource>

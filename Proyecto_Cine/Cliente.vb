@@ -14,7 +14,7 @@ Public Class Cliente
 
     'Agrega los asientos seleccionados en el ListBox a un TextBox
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        For Each Item As Object In lstAsientos.SelectedItem
+        For Each Item As String In lstAsientos.SelectedItem
             txtAsientosSelec.AppendText(Item.ToString + Environment.NewLine)
         Next
     End Sub
@@ -22,6 +22,7 @@ Public Class Cliente
     'Limpia el TextBox y el ListBox
     Private Sub BtnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
         txtAsientosSelec.Clear()
+
         lstAsientos.ClearSelected()
     End Sub
 
@@ -34,7 +35,7 @@ Public Class Cliente
 
         nombre = txtNomCliente.Text.ToString
         fecha = dtpFecha.Value.ToString
-        asientos = txtAsientosSelec.Text.ToString
+        'asientos = txtAsientosSelec.Text.ToString
         cantNinos = CInt(numNinos.Value)
         cantAdultos = CInt(numAdultos.Value)
 
@@ -67,7 +68,7 @@ Public Class Cliente
         End If
     End Sub
 
-    Private Sub txtAsientosSelec_Validating(sender As Object, e As CancelEventArgs) Handles txtAsientosSelec.Validating
+    Private Sub txtAsientosSelec_Validating(sender As Object, e As CancelEventArgs)
         If txtAsientosSelec.Text = "" Then
             MsgBox("Por favor, seleccione al menos un asiento.", MsgBoxStyle.Critical)
         End If
