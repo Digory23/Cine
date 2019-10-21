@@ -10,11 +10,13 @@
     End Sub
 
     Private Sub BtnConsultar_Click(sender As Object, e As EventArgs) Handles btnConsultar.Click
+        Hide()
         Cartelera.Show()
         Hide()
     End Sub
 
     Private Sub BtnRevisar_Click(sender As Object, e As EventArgs) Handles btnRevisar.Click
+        Hide()
         Asientos.Show()
     End Sub
 

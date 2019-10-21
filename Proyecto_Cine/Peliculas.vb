@@ -4,7 +4,7 @@ Imports System.ComponentModel
 Public Class Peliculas
     Dim ruta As Image
     Dim cont As Integer
-    Dim peli As New Inicio
+
     Dim file As New OpenFileDialog()
 
 
@@ -16,9 +16,9 @@ Public Class Peliculas
         If (cont = 3) Then 'Una vez ingresado los datos se deshabilita el boton 
             btnIngresar.Enabled = False
             btnConfirmar.Enabled = True
-        ElseIf (cont < 3) Then
+        End If
 
-            titulo = txtTitulo.Text
+        titulo = txtTitulo.Text
             año = txtAño.Text
             genero = cmbGenero.Text
             tanda = cmbTanda.Text
@@ -26,27 +26,26 @@ Public Class Peliculas
             duracion = txtDuracion.Text
             sala = cmbSala.Text
 
-            Call validar()
-
 
             Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
-            cont = cont + 1
+            Call validar()
+
             MsgBox(cont, MsgBoxStyle.Critical)
             Call Limpiar()
-        End If
+
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
         Inicio.Show()
         Close() 'Cuando se habilite el boton este evento cerrara el form actual 
-
+        MsgBox("Los datos de las peliculas fueron ingresados con exito")
     End Sub
 
     Private Sub Peliculas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Inicio.Show()
     End Sub
@@ -75,11 +74,18 @@ Public Class Peliculas
     Public Function validar()
         If txtTitulo.Text = "" Or txtAño.Text = "" Or txtDuracion.Text = "" Or txtTitulo.Text = "" Or cmbGenero.Text = "" Or cmbSala.Text = "" Or cmbTanda.Text = "" Or cmbTipo.Text = "" Then
             MsgBox("Error Ingresar Datos", MsgBoxStyle.Critical)
-            cont = cont - 1
+            If (cont > 0) Then 'Para que el contador no quede en -1
+                cont = cont - 1
+            End If
+
 
         ElseIf file.Filter = "" Then
             MsgBox("Seleccione una Imagen", MsgBoxStyle.Critical)
-            cont = cont - 1
+            If (cont > 0) Then
+                cont = cont - 1
+            End If
+        Else
+            cont = cont + 1
 
         End If
 

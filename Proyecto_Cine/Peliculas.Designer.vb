@@ -41,7 +41,6 @@ Partial Class Peliculas
         Me.btnConfirmar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCargar = New System.Windows.Forms.Button()
-        Me.btnRegresar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -213,7 +212,6 @@ Partial Class Peliculas
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.Controls.Add(Me.btnCargar)
-        Me.Panel1.Controls.Add(Me.btnRegresar)
         Me.Panel1.Controls.Add(Me.cmbSala)
         Me.Panel1.Controls.Add(Me.btnConfirmar)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -243,17 +241,6 @@ Partial Class Peliculas
         Me.btnCargar.TabIndex = 22
         Me.btnCargar.Text = "Cargar Imagen"
         Me.btnCargar.UseVisualStyleBackColor = True
-        '
-        'btnRegresar
-        '
-        Me.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegresar.ForeColor = System.Drawing.Color.Black
-        Me.btnRegresar.Location = New System.Drawing.Point(102, 419)
-        Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(75, 23)
-        Me.btnRegresar.TabIndex = 21
-        Me.btnRegresar.Text = "Regresar"
-        Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'Peliculas
         '
@@ -293,6 +280,5 @@ Partial Class Peliculas
     Friend WithEvents cmbSala As ComboBox
     Friend WithEvents btnConfirmar As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnRegresar As Button
     Friend WithEvents btnCargar As Button
 End Class

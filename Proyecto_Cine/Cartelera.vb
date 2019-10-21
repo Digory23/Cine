@@ -30,6 +30,7 @@
         cmbPelicula.Items.Add(Pelicula.GetTitulo(0))
         cmbPelicula.Items.Add(Pelicula.GetTitulo(1))
         cmbPelicula.Items.Add(Pelicula.GetTitulo(2))
+        cmbPelicula.Items.Add(Pelicula.GetTitulo(3))
         cmbPelicula.SelectedIndex = 0
     End Sub
 End Class
