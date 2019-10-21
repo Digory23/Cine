@@ -32,7 +32,7 @@ Partial Class Inicio
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnTotales = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -128,16 +128,16 @@ Partial Class Inicio
         Me.btnTotales.Text = "Ver totales"
         Me.btnTotales.UseVisualStyleBackColor = True
         '
-        'btnSalir
+        'Button2
         '
-        Me.btnSalir.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnSalir.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(328, 266)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(107, 43)
-        Me.btnSalir.TabIndex = 12
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = False
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(328, 266)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(107, 43)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Salir"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Inicio
         '
@@ -146,7 +146,7 @@ Partial Class Inicio
         Me.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.moviebg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(733, 411)
-        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnTotales)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -172,5 +172,5 @@ Partial Class Inicio
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnTotales As Button
-    Friend WithEvents btnSalir As Button
+    Friend WithEvents Button2 As Button
 End Class

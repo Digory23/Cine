@@ -52,11 +52,11 @@ Partial Class Totales
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtClientesCortesia = New System.Windows.Forms.TextBox()
+        Me.txtTotalA = New System.Windows.Forms.TextBox()
+        Me.txtTotalN = New System.Windows.Forms.TextBox()
+        Me.txtNoRecaudado = New System.Windows.Forms.TextBox()
+        Me.txtRecaudado = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -359,45 +359,45 @@ Partial Class Totales
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtClientesCortesia
         '
-        Me.TextBox1.Location = New System.Drawing.Point(249, 362)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(56, 22)
-        Me.TextBox1.TabIndex = 6
+        Me.txtClientesCortesia.Location = New System.Drawing.Point(249, 362)
+        Me.txtClientesCortesia.Name = "txtClientesCortesia"
+        Me.txtClientesCortesia.ReadOnly = True
+        Me.txtClientesCortesia.Size = New System.Drawing.Size(56, 22)
+        Me.txtClientesCortesia.TabIndex = 6
         '
-        'TextBox2
+        'txtTotalA
         '
-        Me.TextBox2.Location = New System.Drawing.Point(521, 388)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(58, 22)
-        Me.TextBox2.TabIndex = 7
+        Me.txtTotalA.Location = New System.Drawing.Point(521, 388)
+        Me.txtTotalA.Name = "txtTotalA"
+        Me.txtTotalA.ReadOnly = True
+        Me.txtTotalA.Size = New System.Drawing.Size(58, 22)
+        Me.txtTotalA.TabIndex = 7
         '
-        'TextBox3
+        'txtTotalN
         '
-        Me.TextBox3.Location = New System.Drawing.Point(521, 362)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(58, 22)
-        Me.TextBox3.TabIndex = 8
+        Me.txtTotalN.Location = New System.Drawing.Point(521, 362)
+        Me.txtTotalN.Name = "txtTotalN"
+        Me.txtTotalN.ReadOnly = True
+        Me.txtTotalN.Size = New System.Drawing.Size(58, 22)
+        Me.txtTotalN.TabIndex = 8
         '
-        'TextBox4
+        'txtNoRecaudado
         '
-        Me.TextBox4.Location = New System.Drawing.Point(249, 388)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(56, 22)
-        Me.TextBox4.TabIndex = 9
+        Me.txtNoRecaudado.Location = New System.Drawing.Point(249, 388)
+        Me.txtNoRecaudado.Name = "txtNoRecaudado"
+        Me.txtNoRecaudado.ReadOnly = True
+        Me.txtNoRecaudado.Size = New System.Drawing.Size(56, 22)
+        Me.txtNoRecaudado.TabIndex = 9
         '
-        'TextBox5
+        'txtRecaudado
         '
-        Me.TextBox5.Location = New System.Drawing.Point(249, 418)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(56, 22)
-        Me.TextBox5.TabIndex = 10
+        Me.txtRecaudado.Location = New System.Drawing.Point(249, 418)
+        Me.txtRecaudado.Name = "txtRecaudado"
+        Me.txtRecaudado.ReadOnly = True
+        Me.txtRecaudado.Size = New System.Drawing.Size(56, 22)
+        Me.txtRecaudado.TabIndex = 10
         '
         'Label2
         '
@@ -455,11 +455,11 @@ Partial Class Totales
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtRecaudado)
+        Me.Controls.Add(Me.txtNoRecaudado)
+        Me.Controls.Add(Me.txtTotalN)
+        Me.Controls.Add(Me.txtTotalA)
+        Me.Controls.Add(Me.txtClientesCortesia)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -512,11 +512,11 @@ Partial Class Totales
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents btnSalir As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtClientesCortesia As TextBox
+    Friend WithEvents txtTotalA As TextBox
+    Friend WithEvents txtTotalN As TextBox
+    Friend WithEvents txtNoRecaudado As TextBox
+    Friend WithEvents txtRecaudado As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label10 As Label
