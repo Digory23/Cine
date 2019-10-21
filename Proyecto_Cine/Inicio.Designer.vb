@@ -31,8 +31,8 @@ Partial Class Inicio
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnTotales = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -117,27 +117,27 @@ Partial Class Inicio
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
-        'Button1
+        'btnTotales
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.Button1.Location = New System.Drawing.Point(328, 202)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 26)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Ver totales"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnTotales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTotales.ForeColor = System.Drawing.Color.SaddleBrown
+        Me.btnTotales.Location = New System.Drawing.Point(328, 202)
+        Me.btnTotales.Name = "btnTotales"
+        Me.btnTotales.Size = New System.Drawing.Size(165, 26)
+        Me.btnTotales.TabIndex = 11
+        Me.btnTotales.Text = "Ver totales"
+        Me.btnTotales.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSalir
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(328, 266)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(107, 43)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Salir"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnSalir.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnSalir.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.Location = New System.Drawing.Point(328, 266)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(107, 43)
+        Me.btnSalir.TabIndex = 12
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'Inicio
         '
@@ -146,8 +146,8 @@ Partial Class Inicio
         Me.BackgroundImage = Global.Proyecto_Cine.My.Resources.Resources.moviebg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(733, 411)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnTotales)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel3)
@@ -171,6 +171,6 @@ Partial Class Inicio
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnTotales As Button
+    Friend WithEvents btnSalir As Button
 End Class

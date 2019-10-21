@@ -57,6 +57,7 @@ Public Class Cliente
         DatosCompras.SetAsientos(asientos)
         DatosCompras.SetCortesia(cortesia)
         DatosCompras.SetTipoPelicula(tipoPelicula)
+        Factura.Show()
     End Sub
 
     'Validaciones de campos nombre, fecha, cantidad de ninos y adultos y los asientos seleccionados
@@ -73,19 +74,19 @@ Public Class Cliente
     End Sub
 
     Private Sub dtpFecha_Validating(sender As Object, e As CancelEventArgs) Handles dtpFecha.Validating
-        If dtpFecha.Value = "" Then
-            MsgBox("Por favor, seleccione la fecha de entrada.", MsgBoxStyle.Critical)
+        If dtpFecha.Value < Date.Today Then
+            MsgBox("Por favor, seleccione desde hoy en adelante.", MsgBoxStyle.Critical)
         End If
     End Sub
 
     Private Sub numNinos_Validating(sender As Object, e As CancelEventArgs) Handles numNinos.Validating
-        If numNinos.Value = "" Then
+        If numNinos.Value < 0 Then
             MsgBox("Por favor, indique una cantidad. Si no hay boletos de niños, coloque 0.", MsgBoxStyle.Critical)
         End If
     End Sub
 
     Private Sub numAdultos_Validating(sender As Object, e As CancelEventArgs) Handles numAdultos.Validating
-        If numAdultos.Value = "" Then
+        If numAdultos.Value < 0 Then
             MsgBox("Por favor, seleccione por al menos un boleto.", MsgBoxStyle.Critical)
         End If
     End Sub
