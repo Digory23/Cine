@@ -57,6 +57,7 @@ Public Class Cliente
         DatosCompras.SetAsientos(asientos)
         DatosCompras.SetCortesia(cortesia)
         DatosCompras.SetTipoPelicula(tipoPelicula)
+        Factura.Show()
     End Sub
 
     'Validaciones de campos nombre, fecha, cantidad de ninos y adultos y los asientos seleccionados
