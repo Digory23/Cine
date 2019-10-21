@@ -170,7 +170,7 @@ Public Class Peliculas
     End Sub
 
     Private Sub txtDuracion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDuracion.KeyPress
-        If Not IsNumeric(e.KeyChar) Then
+        If Not IsNumeric(e.KeyChar) Or txtDuracion.Text < 0 Then
             MsgBox("Solo se permiten números", MsgBoxStyle.Critical)
             e.Handled = True
         End If
