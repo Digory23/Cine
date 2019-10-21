@@ -8,6 +8,7 @@
         Dim ind As Integer
         ind = cmbPelicula.SelectedIndex 'Obtiene el indice de la pelicula seleccionada
         Cliente.Show()
+        Me.Close()
         DatosCompras.SetIndice(ind)
     End Sub
 

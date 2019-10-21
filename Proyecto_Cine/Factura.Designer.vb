@@ -23,6 +23,7 @@ Partial Class Factura
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbxDetalle = New System.Windows.Forms.GroupBox()
+        Me.fechaPeli = New System.Windows.Forms.TextBox()
         Me.txtSala = New System.Windows.Forms.TextBox()
         Me.txtAdultos = New System.Windows.Forms.TextBox()
         Me.txtNinos = New System.Windows.Forms.TextBox()
@@ -56,7 +57,6 @@ Partial Class Factura
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.fechaPeli = New System.Windows.Forms.TextBox()
         Me.gbxDetalle.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.txtDescuento.SuspendLayout()
@@ -87,6 +87,14 @@ Partial Class Factura
         Me.gbxDetalle.TabIndex = 0
         Me.gbxDetalle.TabStop = False
         Me.gbxDetalle.Text = "Detalle del Consumo"
+        '
+        'fechaPeli
+        '
+        Me.fechaPeli.Location = New System.Drawing.Point(149, 99)
+        Me.fechaPeli.Name = "fechaPeli"
+        Me.fechaPeli.ReadOnly = True
+        Me.fechaPeli.Size = New System.Drawing.Size(189, 23)
+        Me.fechaPeli.TabIndex = 21
         '
         'txtSala
         '
@@ -233,7 +241,7 @@ Partial Class Factura
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(33, 35)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(34, 13)
+        Me.Label18.Size = New System.Drawing.Size(35, 13)
         Me.Label18.TabIndex = 29
         Me.Label18.Text = "Total:"
         '
@@ -405,14 +413,6 @@ Partial Class Factura
         Me.Label11.Size = New System.Drawing.Size(226, 25)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Cinexxxxx Panamá, S.A."
-        '
-        'fechaPeli
-        '
-        Me.fechaPeli.Location = New System.Drawing.Point(149, 99)
-        Me.fechaPeli.Name = "fechaPeli"
-        Me.fechaPeli.ReadOnly = True
-        Me.fechaPeli.Size = New System.Drawing.Size(189, 23)
-        Me.fechaPeli.TabIndex = 21
         '
         'Factura
         '

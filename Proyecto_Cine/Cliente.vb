@@ -58,6 +58,7 @@ Public Class Cliente
         DatosCompras.SetCortesia(cortesia)
         DatosCompras.SetTipoPelicula(tipoPelicula)
         Factura.Show()
+        Me.Close()
     End Sub
 
     'Validaciones de campos nombre, fecha, cantidad de ninos y adultos y los asientos seleccionados
