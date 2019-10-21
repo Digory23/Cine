@@ -20,5 +20,7 @@
         txtTotalA.Text = ReporteTotales.GetTotalAdultos()
         txtTotalN.Text = ReporteTotales.GetTotalNiños()
 
+
+
     End Sub
 End Class

@@ -103,6 +103,7 @@
     <Compile Include="Factura.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Facturas.vb" />
     <Compile Include="Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>

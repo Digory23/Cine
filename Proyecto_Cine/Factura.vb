@@ -55,6 +55,11 @@
         End If
 
 
+        'Cargar Totales 
+        If txtSala.Text = 1 Then
+
+        End If
+
 
         'monPagado = pago
         'monDevuelto = monPagado - total
