@@ -16,12 +16,19 @@ Public Class Peliculas
         If (cont = 3) Then 'Una vez ingresado los datos se deshabilita el boton 
             btnIngresar.Enabled = False
             btnConfirmar.Enabled = True
+            txtTitulo.Enabled = False
+            txtAño.Enabled = False
+            cmbGenero.Enabled = False
+            cmbTanda.Enabled = False
+            cmbTipo.Enabled = False
+            txtDuracion.Enabled = False
+            cmbSala.Enabled = False
         End If
 
         titulo = txtTitulo.Text
-            año = txtAño.Text
-            genero = cmbGenero.Text
-            tanda = cmbTanda.Text
+        año = txtAño.Text
+        genero = cmbGenero.Text
+        tanda = cmbTanda.Text
             tipo = cmbTipo.Text
             duracion = txtDuracion.Text
             sala = cmbSala.Text
