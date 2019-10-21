@@ -7,8 +7,9 @@
     Private Sub btnComprar_Click(sender As Object, e As EventArgs) Handles btnComprar.Click
         Dim ind As Integer
         ind = cmbPelicula.SelectedIndex 'Obtiene el indice de la pelicula seleccionada
-        Cliente.Show()
         DatosCompras.SetIndice(ind)
+        Cliente.Show()
+
     End Sub
 
 
