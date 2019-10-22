@@ -14,9 +14,14 @@ Public Class Cliente
 
     'Agrega los asientos seleccionados en el ListBox a un TextBox
     Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        For Each Item As String In lstAsientos.SelectedItem
-            txtAsientosSelec.AppendText(Item.ToString + Environment.NewLine)
+
+        Dim asientos As String = ""
+        For i As Integer = 0 To lstAsientos.SelectedItems.Count - 1
+
+            asientos = asientos + " " + lstAsientos.SelectedItems.Item(i)
+
         Next
+        txtAsientosSelec.Text = asientos
     End Sub
 
     'Limpia el TextBox y el ListBox
