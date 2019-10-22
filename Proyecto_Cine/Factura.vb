@@ -47,7 +47,7 @@
         If dia.DayOfWeek = DayOfWeek.Wednesday Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
-        ElseIf cortesia = True And tipoPeli.Equals("R") Then
+        ElseIf cortesia = True And tipoPeli.Equals("R") And txtSala.Text <> 3 Then
             monPagar = total - boletoCortesia
             descuentoT = total - monPagar
             lblMensCortesia.Visible = True
@@ -57,7 +57,7 @@
         End If
 
         fechaPeli.Text = dia.ToString()
-        monDevuelto = monPagado - monPagar
+        monDevuelto = total - monPagar
 
         'Cargar Totales 
         If txtSala.Text = 1 Then
