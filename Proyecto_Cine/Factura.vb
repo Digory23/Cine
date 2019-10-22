@@ -24,7 +24,7 @@
     Public Function CargarFactura()
         txtNomCliente.Text = DatosCompras.GetNombre
         txtNomPeli.Text = Pelicula.GetTitulo(DatosCompras.GetIndice)
-        fechaPeli.Text = DatosCompras.GetFecha
+        dia = DatosCompras.GetFecha
         txtAdultos.Text = DatosCompras.GetAdultos
         txtNinos.Text = DatosCompras.GetNiños
         txtSala.Text = Pelicula.GetSala(DatosCompras.GetIndice)
@@ -32,7 +32,7 @@
         cortesia = DatosCompras.GetCortesia()
         tipoPeli = DatosCompras.GetTipoPelicula()
 
-        If txtSala.Text = 2 Then
+        If txtSala.Text = 3 Then
             valNinos = Cliente.numNinos.Value * 5.0
             valAdultos = Cliente.numAdultos.Value * 8.0
         Else
@@ -43,7 +43,8 @@
         valTotal = valNinos + valAdultos
         total = CSng(valTotal)
 
-        If Cliente.dtpFecha.Value.Day.ToString("Wednesday") = "Wednesday" Or Cliente.dtpFecha.Value.Day.ToString("Miércoles") = "Miércoles" Then
+
+        If dia.DayOfWeek = DayOfWeek.Wednesday Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
@@ -54,6 +55,7 @@
             monPagar = total
         End If
 
+        fechaPeli.Text = dia.ToString()
 
         'Cargar Totales 
         If txtSala.Text = 1 Then
