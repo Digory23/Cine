@@ -37,15 +37,15 @@ Public Class Peliculas
             Pelicula.Cargar(titulo, genero, tanda, tipo, año, duracion, sala, cont, ruta)
             Call validar()
 
-            MsgBox(cont, MsgBoxStyle.Critical)
-            Call Limpiar()
+        MsgBox(cont, "Peliculas Ingresadas", MessageBoxIcon.Information)
+        Call Limpiar()
 
     End Sub
 
     Private Sub BtnConfirmar_Click(sender As Object, e As EventArgs) Handles btnConfirmar.Click
         Inicio.Show()
         Close() 'Cuando se habilite el boton este evento cerrara el form actual 
-        MsgBox("Los datos de las peliculas fueron ingresados con exito")
+        MsgBox("Los datos de las peliculas fueron ingresados con exito", "Peliculas Ingresadas", MessageBoxIcon.Information)
     End Sub
 
     Private Sub Peliculas_Load(sender As Object, e As EventArgs) Handles MyBase.Load

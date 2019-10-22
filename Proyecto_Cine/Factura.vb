@@ -43,7 +43,7 @@
         valTotal = valNinos + valAdultos
         total = CSng(valTotal)
 
-        If Cliente.dtpFecha.Value.Day = "Wednesday" Or Cliente.dtpFecha.Value.Day = "Miércoles" Then
+        If Cliente.dtpFecha.Value.Day.ToString("Wednesday") = "Wednesday" Or Cliente.dtpFecha.Value.Day.ToString("Miércoles") = "Miércoles" Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
