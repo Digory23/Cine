@@ -49,6 +49,7 @@
             descuentoT = total - monPagar
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
             monPagar = total - boletoCortesia
+            descuentoT = total - monPagar
             lblMensCortesia.Visible = True
             lblMensCortesia.Text = "Usted ha adquirido un boleto de cortesía."
         Else
@@ -56,6 +57,7 @@
         End If
 
         fechaPeli.Text = dia.ToString()
+        monDevuelto = monPagado - monPagar
 
         'Cargar Totales 
         If txtSala.Text = 1 Then
@@ -76,7 +78,7 @@
 
     Sub Asignar(pago As Single)
         monPagado = pago
-        monDevuelto = monPagado - total
+        'monDevuelto = monPagado - total
 
         txtTotal.Text = total
         txtDescPeli.Text = descuentoT
