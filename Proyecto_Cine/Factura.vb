@@ -20,6 +20,7 @@
 
     Dim cortesia As Boolean
     Dim tipoPeli As String
+    Dim dia As Date
     Public Function CargarFactura()
         txtNomCliente.Text = DatosCompras.GetNombre
         txtNomPeli.Text = Pelicula.GetTitulo(DatosCompras.GetIndice)
@@ -42,8 +43,7 @@
         valTotal = valNinos + valAdultos
         total = CSng(valTotal)
 
-
-        If fechaPeli.Equals(DayOfWeek.Wednesday) Then
+        If Cliente.dtpFecha.Value.Day = "Wednesday" Or Cliente.dtpFecha.Value.Day = "Miércoles" Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
