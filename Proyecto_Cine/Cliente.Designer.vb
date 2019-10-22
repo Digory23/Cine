@@ -128,8 +128,8 @@ Partial Class Cliente
         Me.txtAsientosSelec.Location = New System.Drawing.Point(406, 258)
         Me.txtAsientosSelec.Multiline = True
         Me.txtAsientosSelec.Name = "txtAsientosSelec"
-        Me.txtAsientosSelec.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtAsientosSelec.Size = New System.Drawing.Size(100, 62)
+        Me.txtAsientosSelec.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.txtAsientosSelec.Size = New System.Drawing.Size(100, 53)
         Me.txtAsientosSelec.TabIndex = 32
         '
         'txtPelicula

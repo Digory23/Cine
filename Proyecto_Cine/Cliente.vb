@@ -40,7 +40,7 @@ Public Class Cliente
 
         nombre = txtNomCliente.Text.ToString
         fecha = dtpFecha.Value.ToString
-        'asientos = txtAsientosSelec.Text.ToString
+        asientos = txtAsientosSelec.Text.ToString
         cantNinos = CInt(numNinos.Value)
         cantAdultos = CInt(numAdultos.Value)
 
