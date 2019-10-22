@@ -3,16 +3,10 @@
     Dim total, monPagar, monPagado, monDevuelto, descuentoT As Single
     Dim valNinos, valAdultos, valTotal As Decimal
     Dim boletoCortesia As Integer = 4
+    Dim numCortesia As Integer
+    Dim boletoNino, boletoAdulto As Integer
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
-        total = 0
-        monPagar = 0
-        monPagado = 0
-        monDevuelto = 0
-        descuentoT = 0
-        valNinos = 0
-        valAdultos = 0
-        valTotal = 0
         Me.Close()
         Cartelera.Close()
         Inicio.Show()
@@ -30,8 +24,10 @@
         txtAsientos.Text = DatosCompras.GetAsientos
         cortesia = DatosCompras.GetCortesia()
         tipoPeli = DatosCompras.GetTipoPelicula()
+        boletoNino = CInt(txtNinos.Text.ToString)
+        boletoAdulto = CInt(txtAdultos.Text.ToString)
 
-        If txtSala.Text = 2 Then
+        If txtSala.Text = 3 Then
             valNinos = Cliente.numNinos.Value * 5.0
             valAdultos = Cliente.numAdultos.Value * 8.0
         Else
@@ -46,20 +42,32 @@
         If fechaPeli.Equals(DayOfWeek.Wednesday) Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
+            numCortesia = 0
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
             monPagar = total - boletoCortesia
+            numCortesia = 1
             lblMensCortesia.Visible = True
             lblMensCortesia.Text = "Usted ha adquirido un boleto de cortesía."
         Else
             monPagar = total
         End If
 
+        Select Case txtSala.Text
+            Case 1
+                ReporteTotales.AcumS1(boletoNino, boletoAdulto, total)
+                ReporteTotales.Total_Final(numCortesia)
+            Case 2
+                ReporteTotales.AcumS2(boletoNino, boletoAdulto, total)
+                ReporteTotales.Total_Final(numCortesia)
+            Case 3
+                ReporteTotales.AcumS3(boletoNino, boletoAdulto, total)
+                ReporteTotales.Total_Final(numCortesia)
+            Case 4
+                ReporteTotales.AcumS4(boletoNino, boletoAdulto, total)
+                ReporteTotales.Total_Final(numCortesia)
+        End Select
 
-        'Cargar Totales 
-        If txtSala.Text = 1 Then
-
-        End If
-
+        'ReporteTotales.Total_Final(numCortesia)
 
         'monPagado = pago
         'monDevuelto = monPagado - total
