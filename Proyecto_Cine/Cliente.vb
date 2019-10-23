@@ -3,6 +3,9 @@
 Public Class Cliente
     'Muestra el form con el layout de asientos para ver los disponibles
     Private Sub BtnAsientos_Click(sender As Object, e As EventArgs) Handles btnAsientos.Click
+        Dim asiento As String
+        asiento = txtAsientosSelec.Text.ToString
+        DatosCompras.SetAsientos(asiento)
         Asientos.Show()
     End Sub
 
