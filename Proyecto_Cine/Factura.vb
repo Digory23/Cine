@@ -44,14 +44,14 @@
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
             numCortesia = 0
-        ElseIf cortesia = True And tipoPeli.Equals("R") Then
-            monPagar = total - boletoCortesia
-            numCortesia = 1
+
         ElseIf cortesia = True And tipoPeli.Equals("R") And txtSala.Text <> 3 Then
             monPagar = total - boletoCortesia
             descuentoT = total - monPagar
+            numCortesia = 1
             lblMensCortesia.Visible = True
             lblMensCortesia.Text = "Usted ha adquirido un boleto de cortesía."
+            ReporteTotales.Norecaudado(boletoCortesia)
         Else
             monPagar = total
         End If

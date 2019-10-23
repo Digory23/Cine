@@ -43,6 +43,11 @@
         'total_noRecaudado = ?
     End Sub
 
+    'Acumulador del dinero no recaudado por uso de cortesia
+    Sub Norecaudado(cor As Integer)
+        total_noRecaudado = total_noRecaudado + cor
+    End Sub
+
     'Gets de cada acumulador
 
     'Sala No.1
@@ -105,4 +110,6 @@
     Function GetTotalNoRecaudado()
         Return total_noRecaudado
     End Function
+
+
 End Module
