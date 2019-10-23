@@ -14,10 +14,11 @@
 
     Dim cortesia As Boolean
     Dim tipoPeli As String
+    Dim dia As Date
     Public Function CargarFactura()
         txtNomCliente.Text = DatosCompras.GetNombre
         txtNomPeli.Text = Pelicula.GetTitulo(DatosCompras.GetIndice)
-        fechaPeli.Text = DatosCompras.GetFecha
+        dia = DatosCompras.GetFecha
         txtAdultos.Text = DatosCompras.GetAdultos
         txtNinos.Text = DatosCompras.GetNiños
         txtSala.Text = Pelicula.GetSala(DatosCompras.GetIndice)
@@ -39,13 +40,16 @@
         total = CSng(valTotal)
 
 
-        If fechaPeli.Equals(DayOfWeek.Wednesday) Then
+        If dia.DayOfWeek = DayOfWeek.Wednesday Then
             monPagar = total - (total * 0.15)
             descuentoT = total - monPagar
             numCortesia = 0
         ElseIf cortesia = True And tipoPeli.Equals("R") Then
             monPagar = total - boletoCortesia
             numCortesia = 1
+        ElseIf cortesia = True And tipoPeli.Equals("R") And txtSala.Text <> 3 Then
+            monPagar = total - boletoCortesia
+            descuentoT = total - monPagar
             lblMensCortesia.Visible = True
             lblMensCortesia.Text = "Usted ha adquirido un boleto de cortesía."
         Else
@@ -68,6 +72,14 @@
         End Select
 
         'ReporteTotales.Total_Final(numCortesia)
+        fechaPeli.Text = dia.ToString()
+        monDevuelto = total - monPagar
+
+        'Cargar Totales 
+        If txtSala.Text = 1 Then
+
+        End If
+
 
         'monPagado = pago
         'monDevuelto = monPagado - total
@@ -82,7 +94,7 @@
 
     Sub Asignar(pago As Single)
         monPagado = pago
-        monDevuelto = monPagado - total
+        'monDevuelto = monPagado - total
 
         txtTotal.Text = total
         txtDescPeli.Text = descuentoT
