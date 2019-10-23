@@ -3,6 +3,7 @@
     Private total_cortesia, total_niños, total_adultos As Integer
     Private total_Recaudado, total_noRecaudado As Single
     Private total_s1, total_s2, total_s3, total_s4 As Single
+
     'Acumuladores de los totales de reportes
 
     'Sala No.1

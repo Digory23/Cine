@@ -19,8 +19,10 @@
         txtClientesCortesia.Text = ReporteTotales.GetTotalCortesia()
         txtTotalA.Text = ReporteTotales.GetTotalAdultos()
         txtTotalN.Text = ReporteTotales.GetTotalNiños()
+    End Sub
 
-
-
+    Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Hide()
+        Inicio.Show()
     End Sub
 End Class
