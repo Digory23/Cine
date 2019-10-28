@@ -24,7 +24,6 @@ Partial Class Asientos
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitulo1 = New System.Windows.Forms.Label()
-        Me.lstNoDisponible = New System.Windows.Forms.ListBox()
         Me.lblColumnas = New System.Windows.Forms.Label()
         Me.ptbC4 = New System.Windows.Forms.PictureBox()
         Me.ptbC5 = New System.Windows.Forms.PictureBox()
@@ -44,6 +43,7 @@ Partial Class Asientos
         Me.lblFilas = New System.Windows.Forms.Label()
         Me.txtPantalla = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtAsientos = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.ptbC4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ptbC5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,8 +65,8 @@ Partial Class Asientos
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.txtAsientos)
         Me.Panel1.Controls.Add(Me.lblTitulo1)
-        Me.Panel1.Controls.Add(Me.lstNoDisponible)
         Me.Panel1.Controls.Add(Me.lblColumnas)
         Me.Panel1.Controls.Add(Me.ptbC4)
         Me.Panel1.Controls.Add(Me.ptbC5)
@@ -98,15 +98,6 @@ Partial Class Asientos
         Me.lblTitulo1.Size = New System.Drawing.Size(117, 13)
         Me.lblTitulo1.TabIndex = 19
         Me.lblTitulo1.Text = "Asientos no disponibles"
-        '
-        'lstNoDisponible
-        '
-        Me.lstNoDisponible.BackColor = System.Drawing.Color.White
-        Me.lstNoDisponible.FormattingEnabled = True
-        Me.lstNoDisponible.Location = New System.Drawing.Point(448, 100)
-        Me.lstNoDisponible.Name = "lstNoDisponible"
-        Me.lstNoDisponible.Size = New System.Drawing.Size(61, 95)
-        Me.lstNoDisponible.TabIndex = 18
         '
         'lblColumnas
         '
@@ -303,6 +294,16 @@ Partial Class Asientos
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Control de Asientos"
         '
+        'txtAsientos
+        '
+        Me.txtAsientos.Location = New System.Drawing.Point(424, 121)
+        Me.txtAsientos.Multiline = True
+        Me.txtAsientos.Name = "txtAsientos"
+        Me.txtAsientos.ReadOnly = True
+        Me.txtAsientos.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.txtAsientos.Size = New System.Drawing.Size(114, 55)
+        Me.txtAsientos.TabIndex = 20
+        '
         'Asientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -356,5 +357,5 @@ Partial Class Asientos
     Friend WithEvents ptbA3 As PictureBox
     Friend WithEvents ptbA2 As PictureBox
     Friend WithEvents lblTitulo1 As Label
-    Friend WithEvents lstNoDisponible As ListBox
+    Friend WithEvents txtAsientos As TextBox
 End Class

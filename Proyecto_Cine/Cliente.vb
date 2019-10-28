@@ -3,6 +3,9 @@
 Public Class Cliente
     'Muestra el form con el layout de asientos para ver los disponibles
     Private Sub BtnAsientos_Click(sender As Object, e As EventArgs) Handles btnAsientos.Click
+        Dim asiento As String
+        asiento = txtAsientosSelec.Text.ToString
+        DatosCompras.SetAsientos(asiento)
         Asientos.Show()
     End Sub
 
@@ -40,7 +43,7 @@ Public Class Cliente
 
         nombre = txtNomCliente.Text.ToString
         fecha = dtpFecha.Value.ToString
-        'asientos = txtAsientosSelec.Text.ToString
+        asientos = txtAsientosSelec.Text.ToString
         cantNinos = CInt(numNinos.Value)
         cantAdultos = CInt(numAdultos.Value)
 

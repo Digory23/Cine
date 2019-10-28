@@ -3,6 +3,7 @@
     Private total_cortesia, total_niños, total_adultos As Integer
     Private total_Recaudado, total_noRecaudado As Single
     Private total_s1, total_s2, total_s3, total_s4 As Single
+
     'Acumuladores de los totales de reportes
 
     'Sala No.1
@@ -40,6 +41,11 @@
         total_adultos = ac1_adultos + ac2_adultos + ac3_adultos + ac4_adultos
         total_Recaudado = total_s1 + total_s2 + total_s3 + total_s4
         'total_noRecaudado = ?
+    End Sub
+
+    'Acumulador del dinero no recaudado por uso de cortesia
+    Sub Norecaudado(cor As Integer)
+        total_noRecaudado = total_noRecaudado + cor
     End Sub
 
     'Gets de cada acumulador
@@ -104,4 +110,6 @@
     Function GetTotalNoRecaudado()
         Return total_noRecaudado
     End Function
+
+
 End Module
